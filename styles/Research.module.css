@@ -2,9 +2,9 @@
     top: 0;
     left: 0;
     margin: auto;
-    height: 70vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 45pt;
+    font-size: 40pt;
 }
