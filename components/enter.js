@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styles from '../styles/Enter.module.css';
 
 const Enter = () => {
-    const [isEntered, setIsEntered] = useState(false);
+    const [isEntered, setIsEntered] = useState(null);
     const [waveColor, setWaveColor] = useState('purple'); // Initialize wave color as purple
 
     const handleClick = () => {
@@ -12,9 +12,8 @@ const Enter = () => {
 
     useEffect(() => {
         const hasEntered = localStorage.getItem('hasEntered');
-        if (hasEntered === 'true') {
-            setIsEntered(true);
-        }
+        setIsEntered(hasEntered === 'true');
+        if (hasEntered === 'true') return;
 
         const randomColor = getRandomColor();
         setWaveColor(randomColor);
@@ -37,11 +36,9 @@ const Enter = () => {
         }
         return color;
     };
-    if (isEntered) {
-        return null
-    }
+
     return (
-        <div className={`${styles.container} ${isEntered ? styles.hidden : ''}`}
+        <div className={`${styles.container} ${isEntered === null ? styles.loading : isEntered ? styles.fadeOut : styles.waiting}`}
             onClick={handleClick}
         // style={{ background: `linear-gradient(to right, blue, blue 20%, ${waveColor} 49%, ${waveColor} 51%, blue 80%)` }}
         >
