@@ -37,16 +37,16 @@ const Enter = () => {
         }
         return color;
     };
-
+    if (isEntered) {
+        return null
+    }
     return (
-        !isEntered && (
-            <div className={`${styles.container} ${isEntered ? styles.hidden : ''}`}
-                onClick={handleClick}
-            // style={{ background: `linear-gradient(to right, blue, blue 20%, ${waveColor} 49%, ${waveColor} 51%, blue 80%)` }}
-            >
-                <div className={styles.text}>Click to Enter</div>
-            </div>
-        )
+        <div className={`${styles.container} ${isEntered ? styles.hidden : ''}`}
+            onClick={handleClick}
+        // style={{ background: `linear-gradient(to right, blue, blue 20%, ${waveColor} 49%, ${waveColor} 51%, blue 80%)` }}
+        >
+            <div className={styles.text}>Click to Enter</div>
+        </div>
     );
 };
 

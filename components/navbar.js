@@ -39,57 +39,58 @@ export default function NavigationBar() {
   };
 
   return (
-    <nav>
-      <Enter />
-      <ul className={styles.container}>
-        <li>
-          <Link href="/" className={styles.title}
-            onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            Risteárd Ó hAodha
-          </Link>
-        </li>
-        <div className={styles.pages}>
+    <>
+      <nav className={styles.nav}>
+        <ul className={styles.container}>
           <li>
-            <Link href="/research"
-              style={router.pathname === '/research' ? activePage : {}}
-              onMouseEnter={router.pathname === '/research' ? null : handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              {t("common:research")}
+            <Link href="/" className={styles.title}
+              onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+              Risteárd Ó hAodha
             </Link>
           </li>
-          <li>
-            <Link href="/projects"
-              style={router.pathname === '/projects' ? activePage : {}}
-              onMouseEnter={router.pathname === '/projects' ? null : handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              {t("common:projects")}
-            </Link>
-          </li>
-          <li>
-            <Link href="/agenda"
-              style={router.pathname === '/agenda' ? activePage : {}}
-              onMouseEnter={router.pathname === '/agenda' ? null : handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              {t("common:agenda")}
-            </Link>
-          </li>
-          <li>
-            <Link href="/about"
-              style={router.pathname === '/about' ? activePage : {}}
-              onMouseEnter={router.pathname === '/about' ? null : handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              {t("common:about")}
-            </Link>
-          </li>
-        </div>
-        <div className={styles.locales}>
-          {router.locales.map(locale => (
-            <li key={locale}>
-              <Link href={router.asPath} className={locale}
-                style={router.locale === locale ? activeStyle : {}}
-                locale={locale}>
-                {locale}
+          <div className={styles.pages}>
+            <li>
+              <Link href="/research"
+                style={router.pathname === '/research' ? activePage : {}}
+                onMouseEnter={router.pathname === '/research' ? null : handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                {t("common:research")}
               </Link>
             </li>
-          ))}
-        </div>
-      </ul>
-    </nav >
+            <li>
+              <Link href="/projects"
+                style={router.pathname === '/projects' ? activePage : {}}
+                onMouseEnter={router.pathname === '/projects' ? null : handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                {t("common:projects")}
+              </Link>
+            </li>
+            <li>
+              <Link href="/agenda"
+                style={router.pathname === '/agenda' ? activePage : {}}
+                onMouseEnter={router.pathname === '/agenda' ? null : handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                {t("common:agenda")}
+              </Link>
+            </li>
+            <li>
+              <Link href="/about"
+                style={router.pathname === '/about' ? activePage : {}}
+                onMouseEnter={router.pathname === '/about' ? null : handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                {t("common:about")}
+              </Link>
+            </li>
+          </div>
+          <div className={styles.locales}>
+            {router.locales.map(locale => (
+              <li key={locale}>
+                <Link href={router.asPath} className={locale}
+                  style={router.locale === locale ? activeStyle : {}}
+                  locale={locale}>
+                  {locale}
+                </Link>
+              </li>
+            ))}
+          </div>
+        </ul>
+      </nav >
+      <div className={styles.navSpace}></div></>
   );
 }

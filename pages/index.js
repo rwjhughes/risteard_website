@@ -19,7 +19,6 @@ export default function Home() {
 
   return (
     <div >
-      <Enter />
       <Head>
         <title>{('Risteárd Ó hAodha')}</title>
         <meta name="Risteárd Ó hAodha" content="Index" />
