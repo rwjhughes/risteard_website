@@ -1,0 +1,27 @@
+{
+    "locales": [
+        "en",
+        "ga"
+    ],
+    "defaultLocale": "en",
+    "pages": {
+        "*": [
+            "common"
+        ],
+        "/": [
+            "index"
+        ],
+        "/about": [
+            "about"
+        ],
+        "/projects": [
+            "projects"
+        ],
+        "/agenda": [
+            "agenda"
+        ],
+        "/research": [
+            "research"
+        ]
+    }
+}

@@ -1,0 +1,32 @@
+.body {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap-reverse; */
+    justify-content: center;
+    padding: 30px 5%;
+    gap: 30px;
+}
+
+.bio {
+    font-size: 18pt;
+    text-align: justify;
+}
+
+.text {
+    text-indent: 40px;
+}
+
+.image {
+    max-height: 450px;
+    object-fit: contain;
+}
+
+.link:hover {
+    color: red;
+}
+
+@media (max-width: 1200px) {
+    .body {
+        flex-direction: column-reverse;
+    }
+}

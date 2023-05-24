@@ -1,0 +1,54 @@
+.container{
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 5%;
+}
+
+.year{
+    padding: 20px;
+}
+
+.year h2{
+    display: flex;
+    margin: 0;
+    font-size: 30pt;
+    background-color: rgb(175, 214, 253);
+    max-width: 95px;
+    padding: 2px;
+    margin-bottom: 10px;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+}
+
+.concertBundle{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.concertSingle{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 12px;
+    align-items: flex-end;
+    gap: 0 12px;
+}
+
+.concertSingle p{
+    margin: 0;
+}
+
+.concertDate{
+    font-size: 14pt;
+    color: rgb(211, 233, 253);
+}
+
+.concertTitle{
+    font-size: 18pt;
+}
+
+.concertLocation{
+    color: rgb(185, 185, 185);
+    font-size: 12pt;
+}
