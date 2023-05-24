@@ -82,7 +82,7 @@ const Enter = () => {
                 "--wave-color": waveColor
             }}>
 
-            <div className={styles.text}>Click to Enter</div>
+            <div className={styles.text}>CLICK TO ENTER</div>
         </div>
     );
 };
