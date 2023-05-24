@@ -24,7 +24,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 50pt;
+    font-size: 45pt;
+    max-width: 100vw;
+    position: relative;
+    color: var(--wave-color);
+    filter: invert(100%);
 }
 
 /* .hidden {
@@ -48,7 +52,7 @@
 } */
 
 .fadeOut {
-    animation: fadeout 800ms linear forwards;
+    animation: fadeout 300ms linear forwards;
 }
 
 @keyframes fadeout {
@@ -63,19 +67,29 @@
     }
 }
 
-.waiting {
-    background: linear-gradient(to right, blue, blue 20%, purple 49%, purple 51%, blue 80%);
-    background-size: 200% 100%;
-    animation: wave 5s linear infinite;
+/* .waiting {
+    position: relative;
+    overflow: hidden;
+} */
 
+.waiting::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgb(0, 0, 125), rgb(0, 0, 125) 10%, var(--wave-color) 24%, var(--wave-color) 26%, rgb(0, 0, 125) 40%, rgb(0, 0, 125) 60%, var(--wave-color) 74%, var(--wave-color) 76%, rgb(0, 0, 125) 90%);
+    background-size: 200% 100%;
+    animation: wave 15s linear infinite;
 }
 
 @keyframes wave {
     0% {
-        background-position: 100% 50%;
+        background-position: 0% 50%;
     }
 
     100% {
-        background-position: 0% 50%;
+        background-position: 200% 50%;
     }
 }

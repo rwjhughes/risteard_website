@@ -3,7 +3,14 @@ import styles from '../styles/Enter.module.css';
 
 const Enter = () => {
     const [isEntered, setIsEntered] = useState(null);
-    const [waveColor, setWaveColor] = useState('purple'); // Initialize wave color as purple
+
+    const getRandomRGBColor = () => {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        return `rgb(${r}, ${g}, ${b})`;
+    };
+    const [waveColor, setWaveColor] = useState(getRandomRGBColor()); // Initialise random color
 
     const handleClick = () => {
         setIsEntered(true);
@@ -15,33 +22,66 @@ const Enter = () => {
         setIsEntered(hasEntered === 'true');
         if (hasEntered === 'true') return;
 
-        const randomColor = getRandomColor();
-        setWaveColor(randomColor);
-
         const intervalId = setInterval(() => {
-            const randomColor = getRandomColor();
-            setWaveColor(randomColor);
-        }, 5000);
+            const newColor = cycleColor(waveColor);
+            setWaveColor(newColor);
+        }, 2);
 
         return () => {
             clearInterval(intervalId);
         };
-    }, []);
+    }, [waveColor]);
 
-    const getRandomColor = () => {
-        const letters = '0123456789ABCDEF';
-        let color = '#';
-        for (let i = 0; i < 6; i++) {
-            color += letters[Math.floor(Math.random() * 16)];
+    const cycleColor = (color) => {
+        const colorRegex = /^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/; // Regex pattern for matching RGB values
+        const match = color.match(colorRegex);
+
+        if (!match) {
+            return color; // Return the same color if it doesn't match the RGB format
         }
-        return color;
+
+        const r = parseInt(match[1]);
+        const g = parseInt(match[2]);
+        const b = parseInt(match[3]);
+
+        const randomIndex = Math.floor(Math.random() * 3); // Randomly choose R, G, or B
+        const increment = Math.random() < 0.5 ? -1 : 1; // Randomly choose the increment direction
+
+        let newR = r;
+        let newG = g;
+        let newB = b;
+
+        // Increment the randomly chosen RGB component by one (within 0-255 range)
+        switch (randomIndex) {
+            case 0:
+                newR = Math.max(0, Math.min(255, r + increment));
+                break;
+            case 1:
+                newG = Math.max(0, Math.min(255, g + increment));
+                break;
+            case 2:
+                newB = Math.max(0, Math.min(255, b + increment));
+                break;
+            default:
+                break;
+        }
+
+        // Return the updated color in RGB format
+        return `rgb(${newR}, ${newG}, ${newB})`;
+    };
+
+
+    const getRandomIncrement = () => {
+        return Math.random() < 0.5 ? -1 : 1;
     };
 
     return (
         <div className={`${styles.container} ${isEntered === null ? styles.loading : isEntered ? styles.fadeOut : styles.waiting}`}
             onClick={handleClick}
-        // style={{ background: `linear-gradient(to right, blue, blue 20%, ${waveColor} 49%, ${waveColor} 51%, blue 80%)` }}
-        >
+            style={{
+                "--wave-color": waveColor
+            }}>
+
             <div className={styles.text}>Click to Enter</div>
         </div>
     );
