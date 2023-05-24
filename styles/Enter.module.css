@@ -4,11 +4,12 @@
     left: 0;
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(to right, blue, blue 20%, purple 49%, purple 51%, blue 80%);
-    background-size: 200% 100%;
-    animation: wave 5s linear infinite;
+    background: black;
     opacity: 1;
     z-index: 99;
+    /* transition: opacity 800ms, height 0 800ms, width 0 800ms; */
+    transition: opacity 800ms, height 800ms, width 800ms;
+
 }
 
 .container.transparent {
@@ -26,10 +27,47 @@
     font-size: 50pt;
 }
 
-.hidden {
+/* .hidden {
     display: hidden;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+} */
+
+.fadeOut .text {
+    display: none;
+}
+
+.loading .text {
+    display: none;
+}
+
+/* .fadeOut {
+    opacity: 0;
+    width: 0;
+    height: 0;
+} */
+
+.fadeOut {
+    animation: fadeout 800ms linear forwards;
+}
+
+@keyframes fadeout {
+    99% {
+        opacity: 0;
+        height: initial;
+    }
+
+    100% {
+        opacity: 0;
+        height: 0;
+    }
+}
+
+.waiting {
+    background: linear-gradient(to right, blue, blue 20%, purple 49%, purple 51%, blue 80%);
+    background-size: 200% 100%;
+    animation: wave 5s linear infinite;
+
 }
 
 @keyframes wave {
