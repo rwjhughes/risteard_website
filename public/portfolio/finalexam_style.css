@@ -1,0 +1,284 @@
+@font-face {
+    font-family: Saol;
+    src: url("fonts/Saol.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Akzidenz;
+    src: url("fonts/AkzidenzGrotesk-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Grotesk;
+    src: url("fonts/AkzidenzGrotesk-Extended.otf") format("opentype");
+}
+
+html{
+    margin: 25px;
+    background: black;
+}
+
+h1{
+    color: white;
+    font-family: Saol;
+    font-size: 300%;
+    margin: 0;    
+}
+
+h2, h3, h4, p{
+    color: white;
+    font-family: Akzidenz;
+}
+
+p{
+    font-size: 125%;
+    text-align: center;
+}
+
+h5{
+    color: white;
+    text-align: center;
+    font-size: 125%;
+    font-family: Grotesk;
+    margin:0;
+    padding: 33px 0;
+}
+
+a{
+    text-decoration: none;
+    transition: text-shadow 0.5s ease;
+    color: white;
+}
+
+.w:active{
+    opacity: 0.7;
+}
+
+a h1:active, a p:active{
+    opacity: 0.6;
+}
+
+a:hover{
+    opacity: 1;
+    text-shadow: 20px 20px 2px #6fe2e27c, -20px 20px 2px #e26fac7c, 0px -20px 2px #6fe2967c;  
+}
+
+.NA:hover{
+    text-shadow: 20px 20px 2px #7946e8, -20px 20px 2px #46dde8, 0px -20px 2px #4659e8;
+}
+
+.F:hover{
+    text-shadow: 20px 20px 2px #d8bb48, -20px 20px 2px #ad5415, 0px -20px 2px #ada42a;
+}
+
+.DIE:hover{
+    text-shadow: 20px 20px 2px rgb(185, 159, 190), -20px 20px 2px rgb(127, 101, 148), 0px -20px 2px rgb(194, 139, 179);
+}
+
+.V:hover{
+    text-shadow: 20px 20px 2px #9a3b59, -20px 20px 2px #c99240, 0px -20px 2px #c4c642;
+}
+
+.S:hover{
+    text-shadow: 20px 20px 2px #0d3ab7, -20px 20px 2px #11b6c2, 0px -20px 2px #3705b5;
+}
+
+.content{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 25px;  
+}
+
+.work{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.w{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    opacity: 0.7;
+    border: solid 3px;
+    border-radius: 10px;
+    border-color: rgba(118, 90, 126);
+    transition: border-color 0.8s;
+}
+
+.w:hover{
+    opacity: 1;
+    border-color: rgb(0, 106, 255);
+}
+
+.n{
+    font-size: 300%;
+    margin-left: auto;
+}
+
+.gif{
+    width: 300px;
+    max-width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+
+}
+
+.title{
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-color: black;
+    z-index: 99;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    background: radial-gradient(200px 70px,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.9) 80%,
+    rgba(0, 0, 0, 0.75) 90%,
+    rgba(0, 0, 0, 0) 100%),
+  -webkit-linear-gradient(bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.3) 40%,
+    rgba(0, 0, 0, 1) 95%);
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav h2{
+    font-size: 300%;
+    font-family: Grotesk;
+}
+
+.nav h3{
+    font-size: 150%;
+}
+
+.nav h1,h2,h3,h4{
+    margin: 10px 0 0 0;
+}
+
+.back{
+    font-family: Grotesk;
+    text-decoration: none;
+    font-size: 120%;
+    position: fixed;
+    left: 5%;
+    top: 5%;
+    background-color: black;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.media{
+    display: flex;
+    flex-direction: row;
+    font-size: 90%;
+    justify-content: space-evenly;
+}
+
+.credits{
+    left: 0;
+    text-align: left;
+    /* line-height: 30px; */
+    margin: 0;
+    word-wrap: break-word;
+    padding-bottom: 50px;
+}
+
+.credits br{
+    content: "";
+    display: block;
+    font-size: 100%;
+    height: 1em;
+    display: block;
+  }
+
+.score{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    font-size: 100%;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 10%;
+}
+
+.doc{
+    width: 420px;
+    max-width: 100%;
+}
+
+.paper{
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+}
+
+.paper:hover{
+    opacity: 1;
+}
+
+.paper:active{
+    opacity: 0.8;
+    transition: opacity 0s ease;
+
+}
+
+iframe{
+    width: 1080px;
+    height: 607px;
+    max-width: 100%;
+    border: solid 2px rgba(118, 90, 126, 0.478);
+    border-radius: 3px;
+}
+
+object{
+    border: solid 2px rgba(118, 90, 126, 0.478);
+    border-radius: 3px;
+    max-width: 100%;
+}
+
+@media screen and (max-device-width: 500px) {
+    html{
+        margin: 40px 15px 15px 15px;
+    }
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .workrow{
+        flex-direction: column;
+    }
+    .workrow a{
+        opacity: 1;
+    }
+    .paper{
+        opacity: 0.9;
+    }
+    .media{
+        flex-wrap: wrap-reverse;
+    }
+    .score{
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .score p{
+        margin: 0;
+    }
+}
