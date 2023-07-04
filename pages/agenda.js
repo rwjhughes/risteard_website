@@ -7,29 +7,41 @@ import styles from '../styles/Agenda.module.css';
 
 const concerts = [
   {
+    date: "26/07/2023",
+    title: "Róis",
+    locationen: "Seanscoil Sailearna, Indreabhán, Galway",
+    locationga: "Seanscoil Sailearna, Indreabhán, Gaillimh",
+  },
+  {
     date: "23/07/2023",
     title: "Róis",
     locationen: "Belfast TradFest",
     locationga: "TradFest Bhéal Feirste",
   },
   {
-    date: "20/07/2023",
+    date: "22/07/2023",
     title: "Róis",
-    locationen: "Sneem Summer Festival",
-    locationga: "Féile Samhraidh na Snadhma",
+    locationen: "Sneem Summer Festival, Kerry",
+    locationga: "Féile Samhraidh na Snadhma, Ciarraí",
+  },
+  {
+    date: "21/07/2023",
+    title: "Róis",
+    locationen: "nonfaction, Tralee, Kerry",
+    locationga: "nonfaction, Trá Lí, Ciarraí",
   },
   {
     date: "16/07/2023",
     title: "Róis",
-    locationen: "Cork Opera House",
-    locationga: "Áras Ceoldrámaíochta Chorcaí",
+    locationen: "Quarter Block Party, Cork",
+    locationga: "Quarter Block Party, Corcaigh",
   },
   {
     date: "27/05/2023",
-    title: "Rebel Reads w/ Trá Pháidín",
-    titlega: "Rebel Reads le Trá Pháidín",
-    locationen: "Cork",
-    locationga: "Corcaigh",
+    title: "w/ Trá Pháidín",
+    titlega: "le Trá Pháidín",
+    locationen: "Rebel Reads, Cork",
+    locationga: "Rebel Reads, Corcaigh",
   },
   {
     date: "30/04/2023",
