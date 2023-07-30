@@ -7,22 +7,34 @@ import styles from '../styles/Agenda.module.css';
 
 const concerts = [
   {
+    date: "20/08/2023",
+    title: "Róis",
+    locationen: "Féile na Gréine, Limerick",
+    locationga: "Féile na Gréine, Luimneach",
+  },
+  {
+    date: "19/08/2023",
+    title: "Dreamcycles",
+    locationen: "Féile na Gréine, Limerick",
+    locationga: "Féile na Gréine, Luimneach",
+  },
+  {
     date: "26/07/2023",
     title: "Róis",
-    locationen: "Seanscoil Sailearna, Indreabhán, Galway",
-    locationga: "Seanscoil Sailearna, Indreabhán, Gaillimh",
+    locationen: "Gliogar, Seanscoil Sailearna, Indreabhán, Galway",
+    locationga: "Gliogar, Seanscoil Sailearna, Indreabhán, Gaillimh",
   },
   {
     date: "23/07/2023",
     title: "Róis",
-    locationen: "Belfast TradFest",
-    locationga: "TradFest Bhéal Feirste",
+    locationen: "The John Hewitt, Belfast TradFest",
+    locationga: "The John Hewitt, TradFest Bhéal Feirste",
   },
   {
     date: "22/07/2023",
     title: "Róis",
-    locationen: "Sneem Summer Festival, Kerry",
-    locationga: "Féile Samhraidh na Snadhma, Ciarraí",
+    locationen: "Gliogar, Sneem Summer Festival, Kerry",
+    locationga: "Gliogar, Féile Samhraidh na Snadhma, Ciarraí",
   },
   {
     date: "21/07/2023",
@@ -37,6 +49,18 @@ const concerts = [
     locationga: "Quarter Block Party, Corcaigh",
   },
   {
+    date: "15/07/2023",
+    title: "Róis",
+    locationen: "Connolly's of Leap, Cork",
+    locationga: "Connolly's of Leap, Corcaigh",
+  },
+  {
+    date: "14/07/2023",
+    title: "Róis",
+    locationen: "Connolly's of Leap, Cork",
+    locationga: "Connolly's of Leap, Corcaigh",
+  },
+  {
     date: "27/05/2023",
     title: "w/ Trá Pháidín",
     titlega: "le Trá Pháidín",
@@ -46,8 +70,8 @@ const concerts = [
   {
     date: "30/04/2023",
     title: "Róis",
-    locationen: "Racket Space, Dublin",
-    locationga: "Racket Space, BÁC",
+    locationen: "Gliogar, Racket Space, Dublin",
+    locationga: "Gliogar, Racket Space, BÁC",
   },
   {
     date: "02/04/2023",
@@ -58,20 +82,20 @@ const concerts = [
   {
     date: "31/03/2023",
     title: "Róis",
-    locationen: "The Corner House, Cork",
-    locationga: "The Corner House, Corcaigh",
+    locationen: "Gliogar, The Corner House, Cork",
+    locationga: "Gliogar, The Corner House, Corcaigh",
   },
   {
     date: "30/03/2023",
     title: "Róis",
-    locationen: "Record Room, Limerick",
-    locationga: "Record Room, Luimneach",
+    locationen: "Gliogar, Record Room, Limerick",
+    locationga: "Gliogar, Record Room, Luimneach",
   },
   {
     date: "04/02/2023",
     title: "Róis",
-    locationen: "Áras na nGael, Galway",
-    locationga: "Áras na nGael, Gaillimh",
+    locationen: "Gliogar, Áras na nGael, Galway",
+    locationga: "Gliogar, Áras na nGael, Gaillimh",
   },
   {
     date: "13/12/2022",

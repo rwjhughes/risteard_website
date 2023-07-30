@@ -157,8 +157,8 @@ const projects = [
     category: "performing",
     title: "Seán Being",
     year: "2019",
-    infoen: "piano & synths",
-    infoga: "pianó ⁊ sintéiseoirí",
+    infoen: "piano",
+    infoga: "pianó",
     link: "https://www.youtube.com/watch?v=qsbIjbVS260",
   },
   {
