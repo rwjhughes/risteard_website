@@ -9,9 +9,9 @@ const concerts = [
   {
     date: "17/12/2023",
     title: "w/ Mark Waldron-Hyden & Peadar Tom Mercier",
-    title: "le Mark Waldron-Hyden & Peadar Tom Mercier",
+    titlega: "le Mark Waldron-Hyden & Peadar Tom Mercier",
     locationen: "Clock Tavern, Westport, Mayo",
-    locationga: "Clock Tavern, Cathair, Maigh Eo",
+    locationga: "Clock Tavern, Cathair na Mart, Maigh Eo",
   },
   {
     date: "31/10/2023",
@@ -52,8 +52,8 @@ const concerts = [
   {
     date: "23/07/2023",
     title: "Róis",
-    locationen: "The John Hewitt, Belfast TradFest",
-    locationga: "The John Hewitt, TradFest Bhéal Feirste",
+    locationen: "The John Hewitt, Belfast TradFest, Antrim",
+    locationga: "The John Hewitt, TradFest Bhéal Feirste, Aontroim",
   },
   {
     date: "22/07/2023",
