@@ -63,6 +63,7 @@ const ImageSynthPage = () => {
 
     const [hoveredSquares, setHoveredSquares] = useState([]);
 
+    // hover => play random note of 10edo scale
     const handleSquareHover = (squareIndex) => {
         if (hoveredSquares.includes(squareIndex)) {
         } else {

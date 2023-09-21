@@ -7,7 +7,32 @@ import styles from '../styles/Agenda.module.css';
 
 const concerts = [
   {
-    date: "20/08/2023",
+    date: "17/12/2023",
+    title: "w/ Mark Waldron-Hyden & Peadar Tom Mercier",
+    title: "le Mark Waldron-Hyden & Peadar Tom Mercier",
+    locationen: "Clock Tavern, Westport, Mayo",
+    locationga: "Clock Tavern, Cathair, Maigh Eo",
+  },
+  {
+    date: "31/10/2023",
+    title: "Gliogar",
+    locationen: "Cape Clear Island, Cork",
+    locationga: "Oileán Chléire, Corcaigh",
+  },
+  {
+    date: "29/10/2023",
+    title: "Róis",
+    locationen: "Grand Social, Dublin",
+    locationga: "Grand Social, BÁC",
+  },
+  {
+    date: "22/09/2023",
+    title: "Gaeltacht na Todchaí",
+    locationen: "Oíche Chultúir, An Taibhdhearc, Galway",
+    locationga: "Culture Night, An Taibhdhearc, Gaillimh",
+  },
+  {
+    date: "21/08/2023",
     title: "Róis",
     locationen: "Féile na Gréine, Limerick",
     locationga: "Féile na Gréine, Luimneach",
