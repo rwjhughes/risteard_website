@@ -14,6 +14,12 @@ const concerts = [
     locationga: "Clock Tavern, Cathair na Mart, Maigh Eo",
   },
   {
+    date: "09/11/2023",
+    title: "Cuimhneachán Liam Uí Fhlaithearta",
+    locationen: "Carraroe Library, Galway",
+    locationga: "Leabharlann na Ceathrún Rua, Gaillimh",
+  },
+  {
     date: "31/10/2023",
     title: "Gliogar",
     locationen: "Cape Clear Island, Cork",
