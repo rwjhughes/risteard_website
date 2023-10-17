@@ -50,7 +50,7 @@ export default function NavigationBar() {
           </li>
           <div className={styles.pages}>
             <li>
-              <Link href="/research"
+              <Link href="/research" target="_blank"
                 style={router.pathname === '/research' ? activePage : {}}
                 onMouseEnter={router.pathname === '/research' ? null : handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 {t("common:research")}

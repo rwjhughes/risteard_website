@@ -53,7 +53,7 @@ export default function Home() {
             </div>
             <div className={styles.pages}>
               <li>
-                <Link href="/research">
+                <Link href="/research" target='_blank'>
                   {t("common:research")}
                 </Link>
               </li>
