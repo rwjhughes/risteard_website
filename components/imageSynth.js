@@ -76,16 +76,15 @@ const ImageSynthPage = () => {
     return (
         <div className={styles.container}>
             <div className={styles.overlay} rel="preload">
-                {/* <Image src="/top-image.jpg" alt="Image 1" layout="fill" objectFit="cover" /> */}
-                {[...Array(400)].map((_, index) => (
+                {[...Array(100)].map((_, index) => (
                     <div
                         key={index}
                         id={index}
-                        className={`${styles.square} ${hoveredSquares.includes(index) ? styles.transparent : ''}`}
-                        style={{
-                            top: `${Math.floor(index / 20) * 5}vh`,
-                            left: `${(index % 20) * 5}vw`,
-                        }}
+                        className={`${styles.square} ${hoveredSquares.includes(index) ? styles.transparent : ''} `}
+                        // style={{
+                        //     top: `${Math.floor(index / 20) * 5}vh`,
+                        //     left: `${(index % 20) * 5}vw`,
+                        // }}
                         onMouseEnter={() => handleSquareHover(index)}
                     />
                 ))}

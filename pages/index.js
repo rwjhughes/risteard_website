@@ -75,19 +75,19 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.socials}>
-            <Link href="https://twitter.com/richiohey" class="tw" target="_blank">
+            <Link href="https://twitter.com/richiohey" className="tw" target="_blank">
               TW
             </Link>
-            <Link href="https://instagram.com/richiohey" class="ig" target="_blank">
+            <Link href="https://instagram.com/richiohey" className="ig" target="_blank">
               IG
             </Link>
-            <Link href="https://youtube.com/user/rwjh2010" class="yt" target="_blank">
+            <Link href="https://youtube.com/user/rwjh2010" className="yt" target="_blank">
               YT
             </Link>
-            <Link href="https://soundcloud.com/richiohey" class="sc" target="_blank">
+            <Link href="https://soundcloud.com/richiohey" className="sc" target="_blank">
               SC
             </Link>
-            <Link href="mailto:richard@hughes.ie" class="email" target="_blank">
+            <Link href="mailto:richard@hughes.ie" className="email" target="_blank">
               {t("common:email")}
             </Link>
           </div>
