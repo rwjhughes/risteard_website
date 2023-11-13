@@ -75,16 +75,16 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.socials}>
-            <Link href="https://twitter.com/richiohey" className="tw" target="_blank">
+            <Link href="https://twitter.com/risteard_" className="tw" target="_blank">
               TW
             </Link>
-            <Link href="https://instagram.com/richiohey" className="ig" target="_blank">
+            <Link href="https://instagram.com/risteard__" className="ig" target="_blank">
               IG
             </Link>
             <Link href="https://youtube.com/user/rwjh2010" className="yt" target="_blank">
               YT
             </Link>
-            <Link href="https://soundcloud.com/richiohey" className="sc" target="_blank">
+            <Link href="https://soundcloud.com/risteard0" className="sc" target="_blank">
               SC
             </Link>
             <Link href="mailto:richard@hughes.ie" className="email" target="_blank">
