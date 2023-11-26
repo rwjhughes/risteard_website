@@ -29,34 +29,6 @@ a {
   background-color: #0000FF;
 }
 
-.music {
-  background: magenta;
-}
-
-.recording {
-  background: yellow;
-}
-
-.performing {
-  background: cyan;
-}
-
-.composing {
-  background: #636ed1;
-}
-
-.soundtrack {
-  background: greenyellow;
-}
-
-.arranging {
-  background: aquamarine;
-}
-
-.coding {
-  background: turquoise;
-}
-
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -81,4 +53,14 @@ a {
 
 .sc {
   background: #FF8214;
+}
+
+:root {
+  --releases: magenta;
+  --recording: yellow;
+  --performing: cyan;
+  --composing: #636ed1;
+  --soundtrack: greenyellow;
+  --arranging: aquamarine;
+  --coding: turquoise;
 }

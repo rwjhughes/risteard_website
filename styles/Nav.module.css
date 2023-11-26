@@ -1,12 +1,12 @@
 .nav {
     position: fixed;
-    background-color: black;
+    background: linear-gradient(black 0%, black 66%, rgba(255, 255, 255, 0) 100%);
     width: 100%;
     top: 0;
 }
 
 .navSpace {
-    height: 170px;
+    height: 150px;
 }
 
 .container {
@@ -16,6 +16,7 @@
     align-items: center;
     list-style: none;
     padding: 10px 2%;
+    margin: 16px 0 40px 0;
 }
 
 .pages {
@@ -73,6 +74,14 @@
 }
 
 @media (max-width: 1000px) {
+    .nav {
+        background: linear-gradient(black 0%, black 76%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .navSpace {
+        height: 200px;
+    }
+
     .container {
         flex-direction: column;
         gap: 15px;

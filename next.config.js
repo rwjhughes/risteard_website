@@ -11,7 +11,14 @@ const nextConfig = {
         destination: 'https://researchcatalogue.net/view/1592116/1592117',
         permanent: false,
       },
-    ]
+      {
+        source: '/edo',
+        destination: 'https://gaudeamusscreendive.com/edo-synth',
+        permanent: false,
+      },]
+  },
+  experimental: {
+    scrollRestoration: true,
   }
 };
 

@@ -18,7 +18,7 @@ export default function NavigationBar() {
   const activePage = {
     textShadow: 'none',
     borderBottom: '2px solid red',
-    color: 'gray',
+    color: 'rgba(255, 255, 255, 0.6)',
   };
 
   const handleMouseEnter = (event) => {
