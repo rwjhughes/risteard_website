@@ -517,7 +517,7 @@ export default function ProjectList() {
       {selectedProject && (
         <div className={styles.popup}>
           <div className={styles.popupInner}>
-
+            <div className={`${styles[selectedProject.category]} ${styles.popupCategory}`}>{translateCategory(selectedProject.category)}</div>
 
             <div className={styles.popupContent}>
               <h2>{selectedProject.title}</h2>

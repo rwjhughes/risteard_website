@@ -69,7 +69,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    background: rgba(0, 0, 0, 0.4);
     z-index: -1;
 }
 
@@ -112,6 +113,16 @@
 .popupInner button:hover {
     background: #dd4040;
     border: rgb(181, 181, 181) inset 1px;
+}
+
+.popupCategory {
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    padding-top: 2px;
+    width: 145px;
+    text-align: center;
+    font-size: 15pt;
 }
 
 .popupContent {
@@ -191,31 +202,38 @@
     }
 }
 
-.itemTitle.releases {
+.itemTitle.releases,
+.popupCategory.releases {
     background: var(--releases);
 }
 
-.itemTitle.recording {
+.itemTitle.recording,
+.popupCategory.recording {
     background: var(--recording);
 }
 
-.itemTitle.performing {
+.itemTitle.performing,
+.popupCategory.performing {
     background: var(--performing);
 }
 
-.itemTitle.composing {
+.itemTitle.composing,
+.popupCategory.composing {
     background: var(--composing);
 }
 
-.itemTitle.coding {
+.itemTitle.coding,
+.popupCategory.coding {
     background: var(--coding);
 }
 
-.itemTitle.soundtrack {
+.itemTitle.soundtrack,
+.popupCategory.soundtrack {
     background: var(--soundtrack);
 }
 
-.itemTitle.arranging {
+.itemTitle.arranging,
+.popupCategory.arranging {
     background: var(--arranging);
 }
 
