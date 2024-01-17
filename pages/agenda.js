@@ -7,13 +7,6 @@ import styles from '../styles/Agenda.module.css';
 
 const concerts = [
   {
-    date: "17/12/2023",
-    title: "w/ Mark Waldron-Hyden & Peadar Tom Mercier",
-    titlega: "le Mark Waldron-Hyden & Peadar Tom Mercier",
-    locationen: "Clock Tavern, Westport, Mayo",
-    locationga: "Clock Tavern, Cathair na Mart, Maigh Eo",
-  },
-  {
     date: "09/11/2023",
     title: "Cuimhneachán Liam Uí Fhlaithearta",
     locationen: "Carraroe Library, Galway",

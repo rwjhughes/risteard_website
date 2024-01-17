@@ -39,9 +39,9 @@ const ImageSynthPage = () => {
                 type: "square"
             },
             envelope: {
-                attack: 0.1,
-                sustain: 0.1,
-                release: 0.1
+                attack: 0.06,
+                sustain: 0.06,
+                release: 0.06
             }
         }).connect(inmix);
 
@@ -58,8 +58,8 @@ const ImageSynthPage = () => {
     const [audioDevices, setAudioDevices] = useState(null)
 
     useEffect(() => {
-        if (!audioDevices) { setAudioDevices(makeSynth()) }
-    }, [])
+        if (!audioDevices) { setAudioDevices(makeSynth()) };
+    }, []);
 
     const [hoveredSquares, setHoveredSquares] = useState([]);
 
@@ -68,32 +68,36 @@ const ImageSynthPage = () => {
         if (hoveredSquares.includes(squareIndex)) {
         } else {
             const i = 80 * Math.pow(2, (Math.floor(Math.random() * 50)) / 10);
-            audioDevices.synth.triggerAttackRelease(i, 0.1);
+            audioDevices.synth.triggerAttackRelease(i, 0.18);
             setHoveredSquares((prevHoveredSquares) => [...prevHoveredSquares, squareIndex]);
         }
     };
 
+    const [mouseUpHappened, setMouseUpHappened] = useState(false);
+
     return (
         <div className={styles.container}>
             <div className={styles.overlay} rel="preload">
-                {[...Array(100)].map((_, index) => (
+                {[...Array(400)].map((_, index) => (
                     <div
                         key={index}
                         id={index}
                         className={`${styles.square} ${hoveredSquares.includes(index) ? styles.transparent : ''} `}
-                        // style={{
-                        //     top: `${Math.floor(index / 20) * 5}vh`,
-                        //     left: `${(index % 20) * 5}vw`,
-                        // }}
+                        style={{
+                            top: `${Math.floor(index / 20) * 5}vh`,
+                            left: `${(index % 20) * 5}vw`,
+                        }}
                         onMouseEnter={() => handleSquareHover(index)}
+                        onMouseDown={() => handleSquareHover(index)}
                     />
                 ))}
             </div>
             <div className={styles.bottomLayer}>
-                <Image src="/images/waterblur.jpg" alt="bottom-image" layout="fill" objectFit="cover" />
+                <Image src="/images/water.jpg" alt="bottom-image" layout="fill" objectFit="cover" />
             </div>
         </div>
     );
 };
+
 
 export default ImageSynthPage;

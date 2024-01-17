@@ -14,7 +14,8 @@
     top: 0;
     left: 0;
     height: 100vh;
-    width: calc(100vw + 140px);
+    width: 100vw;
+    /* width: calc(100vw + 140px); */
     z-index: -1;
     line-height: 0;
     overflow-x: hidden;
@@ -22,13 +23,13 @@
 }
 
 .square {
-    /* position: absolute; */
+    position: absolute;
     display: inline-block;
-    height: 10vh;
-    width: 10vw;
+    height: 5vh;
+    width: 5vw;
 
 
-    background: url('/images/grassblur.jpg') no-repeat center fixed;
+    background: url('/images/water_blur.jpg') no-repeat center fixed;
     background-size: cover;
     transition: opacity 0.3s ease-in-out;
 }

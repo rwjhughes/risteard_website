@@ -70,11 +70,6 @@ const Enter = () => {
         return `rgb(${newR}, ${newG}, ${newB})`;
     };
 
-
-    const getRandomIncrement = () => {
-        return Math.random() < 0.5 ? -1 : 1;
-    };
-
     return (
         <div className={`${styles.container} ${isEntered === null ? styles.loading : isEntered ? styles.fadeOut : styles.waiting}`}
             onClick={handleClick}

@@ -52,24 +52,25 @@ export default function Home() {
               <div className={styles.location}>{t("index:location")}</div>
             </div>
             <div className={styles.pages}>
-              <li>
-                <Link href="/research" target='_blank'>
-                  {t("common:research")}
-                </Link>
-              </li>
+
               <li>
                 <Link href="/projects">
-                  {t("common:projects")}
+                  →{t("common:projects")}
                 </Link>
               </li>
               <li>
                 <Link href="/agenda">
-                  {t("common:agenda")}
+                  →{t("common:agenda")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/research" target='_blank'>
+                  →{t("common:research")}
                 </Link>
               </li>
               <li>
                 <Link href="/about">
-                  {t("common:about")}
+                  →{t("common:about")}
                 </Link>
               </li>
             </div>

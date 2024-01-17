@@ -54,7 +54,7 @@ export default function About() {
 
                     </div>
                 </div>
-                <img className={styles.image} src="/images/richi.png" />
+                <img className={styles.image} src="/images/cello.jpg" />
             </div>
             <Footer />
         </div>

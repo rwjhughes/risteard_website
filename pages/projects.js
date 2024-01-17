@@ -53,7 +53,7 @@ const projects = [
     link: "",
     descriptionen: "I made the sound and music for this film by Evangéline D. Allizé. It was premiered at Drop Eveything on Inis Oírr in May 2022. Subtitles are available in English, French and Irish.",
     descriptionga: "Rinne mé an fuaim agus an ceol don scannán seo le Evangéline D. Allizé. Seoladh é ag Drop Eveything in Inis Oírr i mí Bealtaine 2022. Tá fotheidil ann i nGaeilge, i bhFraincis agus i mBéarla.",
-    embed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/aLZ_Gf9rGfo?si=JZqktOkbDq9aJUXB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    embed: '<iframe width="853" height="480" src="https://www.youtube.com/embed/aLZ_Gf9rGfo?si=JZqktOkbDq9aJUXB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
     image: "",
   },
   {
@@ -101,7 +101,7 @@ const projects = [
     link: "",
     descriptionen: "I played cello with Gemma Dunleavy as part of Other Voices.",
     descriptionga: "Chas mé an dordveidhil le Gemma Dunleavy le haghaidh Other Voices.",
-    embed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/efd6ujxULx8?si=pfhp4-ERpEmzYCyF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    embed: '<iframe width="853" height="480" src="https://www.youtube.com/embed/efd6ujxULx8?si=pfhp4-ERpEmzYCyF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
     image: "",
   },
 
@@ -162,7 +162,7 @@ const projects = [
     link: "",
     descriptionen: "This is an album made by ponxi, an experimental electronic duo between Zane Walden and I. Ponxi was formed in 2020. Since then, ponxi has performed live and DJed and released two singles. Ponxi also does live visuals for their own and other's electronic music sets. More ponxi releases are available at <a href='https://ponxi.art' target='_blank'>ponxi.art</a>.",
     descriptionga: "Seo albam le ponxi, dísreach leictreach trialach idir Zane Walden agus mé fhéin. Bunaíodh ponxi i 2020. Ó shin, tá seiteanna beo déanta, céirníní casta agus dhá shingil eisithe ag ponxi. Déanann ponxi amharcíomhanna beo do seiteanna dá chuid fhéin agus do dhaoine eile. Tá na heisiúintí eile de chuid ponxi ar fáil ar <a href='https://ponxi.art' target='_blank'>ponxi.art</a>.",
-    embed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/hY8xdOGGz4k?si=EEU7Kri4tkpdWyCm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    embed: '<iframe width="853" height="480" src="https://www.youtube.com/embed/hY8xdOGGz4k?si=EEU7Kri4tkpdWyCm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
     image: "",
   },
   {
@@ -222,7 +222,7 @@ const projects = [
     link: "",
     descriptionen: "<i>The Brikc</i> is Seán Being's debut release. I play piano on the opening track. This EP is released on wheretheimegoes",
     descriptionga: "'Sé <i>The Brikc</i> an chéad eisiúint de chuid Seán Being. Casann mé an pianó ar an gcéad rian. Tá an EP seo eisithe ar wherethetimegoes.",
-    embed: '<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2156913281/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://seanbeing.bandcamp.com/album/potboiler-no-4-sean-being-the-brikc">Potboiler No. 4: Sean Being - The Brikc by Seán Being</a></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/qsbIjbVS260?si=TfyEi5mKjNwOf3fR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    embed: '<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2156913281/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://seanbeing.bandcamp.com/album/potboiler-no-4-sean-being-the-brikc">Potboiler No. 4: Sean Being - The Brikc by Seán Being</a></iframe><iframe width="853" height="480" src="https://www.youtube.com/embed/qsbIjbVS260?si=TfyEi5mKjNwOf3fR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
     image: "",
   },
   {
@@ -234,7 +234,7 @@ const projects = [
     link: "",
     descriptionen: "I played piano for Seán Being's live band in the second half of 2019.",
     descriptionga: "Chas mé an pianó don bhuíon beo de Seán Being sa dara leath de 2019.",
-    embed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/qsbIjbVS260?si=TfyEi5mKjNwOf3fR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    embed: '<iframe width="853" height="480" src="https://www.youtube.com/embed/qsbIjbVS260?si=TfyEi5mKjNwOf3fR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
     image: "",
   },
   {
@@ -246,7 +246,7 @@ const projects = [
     link: "",
     descriptionen: "I played cello with Henry Earnest as part of his live band, performing mostly in Dublin.",
     descriptionga: "Chas mé an dordveidhil le Henry Earnest de chuid a bhuíon beo, á thaibhiú i mBleá Cliath go hiondúil.",
-    embed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/h1JhUVTI-5E?si=4v1DzsPTaEkVVTyB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    embed: '<iframe width="853" height="480" src="https://www.youtube.com/embed/h1JhUVTI-5E?si=4v1DzsPTaEkVVTyB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
     image: "",
   },
   {
@@ -292,7 +292,7 @@ const projects = [
     infoen: "Data Is Ephemeral",
     infoga: "Data Is Ephemeral",
     link: "https://www.researchcatalogue.net/view/1592116/1592117",
-    descriptionen: "Aduantas was an imporvisation ensemble made up of Pedro Latas, Isaac Barzso, Rose Connolly, Hugo Ariens and I in the Hague, Netherlands. Along with performing I composed <i>Data Is Ephemeral</i> for the ensemble as part fo Spring Festival 2022.",
+    descriptionen: "Aduantas was an imporvisation ensemble made up of Pedro Latas, Isaac Barzso, Rose Connolly, Hugo Ariens and I in the Hague, Netherlands. Along with performing I composed <i>Data Is Ephemeral</i> for the ensemble as part of Spring Festival 2022.",
     descriptionga: "",
     embed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Af8L3GQODZM?si=HZzcXiIEe3iXLIeD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
     image: "",
@@ -306,7 +306,7 @@ const projects = [
     link: "http://www.michelle-pritchard.com/",
     descriptionen: "<i>Veering</i> was composed for Michelle Pritchard as part of her master's research. It is written for solo viola and delay with live visuals.",
     descriptionga: "",
-    embed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/twIm6lTtNbs?si=14RX7G-vbT6xSvr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    embed: '<iframe width="853" height="480" src="https://www.youtube.com/embed/twIm6lTtNbs?si=14RX7G-vbT6xSvr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
     image: "",
   },
   {
@@ -342,7 +342,7 @@ const projects = [
     link: "https://www.maze.nu/",
     descriptionen: "<i>North Atlantic</i> was written for MAZE Ensemble as part of Spring Festival 2021, the Hague. Although it receieved its premiere live on NPO Radio4. It is a composition for an improvisation ensemble based on the wind forecasts teh week previous to the performance.",
     descriptionga: "",
-    embed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/luVI-ExWwBU?si=Q96wFJjs99gObm2r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    embed: '<iframe width="853" height="480" src="https://www.youtube.com/embed/luVI-ExWwBU?si=Q96wFJjs99gObm2r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
     image: "",
   },
   {
@@ -390,7 +390,7 @@ const projects = [
     link: "https://www.kirkosensemble.com/",
     descriptionen: "Based on the poem <i>Week Eight</i> by Victoria Kennefick, I wrote an eponymous composition for Kirkos Ensemble as part of the Irish Composers' Collective <i>ICC Speak</i> series. It was premiered in the Irish architecturial Archives November 2016.",
     descriptionga: "",
-    embed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/iZMNnXOjQRE?si=HUcsA9PxcXIbQqGw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    embed: '<iframe width="853" height="480" src="https://www.youtube.com/embed/iZMNnXOjQRE?si=HUcsA9PxcXIbQqGw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
     image: "",
   },
   {

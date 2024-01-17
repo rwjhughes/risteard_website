@@ -10,6 +10,7 @@
 .bio {
     font-size: 16pt;
     text-align: justify;
+    color: rgb(230, 230, 230);
 }
 
 .text {
@@ -17,8 +18,14 @@
 }
 
 .image {
-    max-height: 450px;
+    /* max-height: 450px; */
     object-fit: contain;
+    max-width: 600px;
+}
+
+.link {
+    color: white;
+    transition: color 0.2s ease-in-out;
 }
 
 .link:hover {
@@ -28,5 +35,9 @@
 @media (max-width: 1200px) {
     .body {
         flex-direction: column-reverse;
+    }
+
+    .image {
+        align-self: center;
     }
 }

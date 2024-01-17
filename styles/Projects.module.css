@@ -79,7 +79,7 @@
     padding: 10px 20px 20px 20px;
     color: black;
     border-radius: 5px;
-    max-width: 50%;
+    max-width: 60%;
     max-height: 90%;
     overflow: auto;
 }
@@ -116,9 +116,10 @@
 }
 
 .popupCategory {
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: black;
-    color: white;
+    /* -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black; */
+    color: rgb(0, 0, 0);
+    font-weight: bold;
     padding-top: 2px;
     width: 145px;
     text-align: center;

@@ -49,13 +49,7 @@ export default function NavigationBar() {
             </Link>
           </li>
           <div className={styles.pages}>
-            <li>
-              <Link href="/research" target="_blank"
-                style={router.pathname === '/research' ? activePage : {}}
-                onMouseEnter={router.pathname === '/research' ? null : handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                {t("common:research")}
-              </Link>
-            </li>
+
             <li>
               <Link href="/projects"
                 style={router.pathname === '/projects' ? activePage : {}}
@@ -68,6 +62,13 @@ export default function NavigationBar() {
                 style={router.pathname === '/agenda' ? activePage : {}}
                 onMouseEnter={router.pathname === '/agenda' ? null : handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 {t("common:agenda")}
+              </Link>
+            </li>
+            <li>
+              <Link href="/research" target="_blank"
+                style={router.pathname === '/research' ? activePage : {}}
+                onMouseEnter={router.pathname === '/research' ? null : handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                {t("common:research")}
               </Link>
             </li>
             <li>
