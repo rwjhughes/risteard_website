@@ -12,6 +12,11 @@ const nextConfig = {
         permanent: false,
       },
       {
+        source: '/quadrilles',
+        destination: 'https://on.soundcloud.com/Psj8Z',
+        permanent: false,
+      },
+      {
         source: '/edo',
         destination: 'https://gaudeamusscreendive.com/edo-synth',
         permanent: false,
