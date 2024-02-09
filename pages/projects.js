@@ -8,6 +8,20 @@ import React, { useEffect, useState } from 'react';
 import styles from '../styles/Projects.module.css';
 
 const projects = [
+  // youtube embed: width=853 hieght=480
+  // {
+  //   category: "",
+  //   title: "",
+  //   year: "",
+  //   infoen: "",
+  //   infoga: "",
+  //   link: "",
+  //   descriptionen: "",
+  //   descriptionga: "",
+  //   embed: '',
+  //   image: "",
+  // },
+
   {
     category: "releases",
     title: "Romhainn Amach",
@@ -20,6 +34,7 @@ const projects = [
     embed: '<iframe style="border: 0; width: 350px; height: 470px; " src="https://bandcamp.com/EmbeddedPlayer/album=3706100408/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=483599109/transparent=true/" seamless><a href="https://thedepartmentofenergy.bandcamp.com/album/may-day-landscape-mixtape">May Day (Landscape Mixtape) by Richard Hughes</a></iframe>',
     image: "",
   },
+
   {
     category: "performing",
     title: "Róis",
@@ -31,6 +46,18 @@ const projects = [
     descriptionga: "Chasainn an dordveidhil le Róis agus thaifeadainn léi chomh maith.",
     embed: '<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2331226156/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://roseconnolly.bandcamp.com/album/uisce-agus-bean">UISCE AGUS BEAN by Róis</a></iframe>',
     image: "/images/projects/rois.jpg",
+  },
+  {
+    category: "performing",
+    title: "Dreamcycles",
+    year: "2023",
+    infoen: "cello",
+    infoga: "dordveidhil",
+    link: "",
+    descriptionen: "",
+    descriptionga: "",
+    embed: '',
+    image: "",
   },
   {
     category: "recording",
@@ -45,10 +72,22 @@ const projects = [
     image: "",
   },
   {
-    category: "soundtrack",
+    category: "sounddesign",
+    title: "Nós Nua",
+    year: "2023",
+    infoen: "sound design for dance performance by Becky Ní Eallaithe & Fionnuala Doyle-Wade, Culture Night at the Taibhdhearc",
+    infoga: "dearadh fuaime do thaibhléiriú damhsa le Becky Ní Eallaithe ⁊ Fionnuala Doyle-Wade, Oíche Chultúir na Taibhdheirce",
+    link: "https://www.antaibhdhearc.com/events/oichechultuir",
+    descriptionen: "",
+    descriptionga: "",
+    embed: '',
+    image: "/images/projects/nosnua.jpg",
+  },
+  {
+    category: "sounddesign",
     title: "Inis Oírr, portrait d'une île",
     year: "2022",
-    infoen: "soundtrack for film by Evangéline D. Allizé",
+    infoen: "sound design for film by Evangéline D. Allizé",
     infoga: "fuaimrian do scannán le Evangéline D. Allizé",
     link: "",
     descriptionen: "I made the sound and music for this film by Evangéline D. Allizé. It was premiered at Drop Eveything on Inis Oírr in May 2022. Subtitles are available in English, French and Irish.",
@@ -106,7 +145,7 @@ const projects = [
   },
 
   {
-    category: "soundtrack",
+    category: "sounddesign",
     title: "Old Aran in Colour",
     year: "2022",
     infoen: "soundtrack production for exhibition",
@@ -285,6 +324,7 @@ const projects = [
     embed: '<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=520010544/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://ahappyaccidentmusic.bandcamp.com/album/waiting-to-happen-e-p">Waiting To Happen (E.P) by A Happy Accident</a></iframe>',
     image: "",
   },
+
   {
     category: "composing",
     title: "Aduantas",
@@ -340,7 +380,7 @@ const projects = [
     infoen: "North Atlantic",
     infoga: "North Atlantic",
     link: "https://www.maze.nu/",
-    descriptionen: "<i>North Atlantic</i> was written for MAZE Ensemble as part of Spring Festival 2021, the Hague. Although it receieved its premiere live on NPO Radio4. It is a composition for an improvisation ensemble based on the wind forecasts teh week previous to the performance.",
+    descriptionen: "<i>North Atlantic</i> was written for MAZE Ensemble as part of Spring Festival 2021, the Hague. Although it receieved its premiere live on NPO Radio4. It is a composition for an improvisation ensemble based on the wind forecasts the week previous to the performance.",
     descriptionga: "",
     embed: '<iframe width="853" height="480" src="https://www.youtube.com/embed/luVI-ExWwBU?si=Q96wFJjs99gObm2r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
     image: "",
@@ -355,6 +395,18 @@ const projects = [
     descriptionen: "<i>Suaitiú</i> was composed for Kate Ellis as a project with Irish Composers' Collective. It is a composition written for any number of celli.",
     descriptionga: "",
     embed: '<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2111535049/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=3316777980/transparent=true/" seamless><a href="https://irishcomposerscollective.bandcamp.com/album/a-good-onion">A Good Onion by ICC</a></iframe>',
+    image: "",
+  },
+  {
+    category: "composing",
+    title: "Lara Gallagher",
+    year: "2019",
+    infoen: "A Conversation",
+    infoga: "",
+    link: "",
+    descriptionen: "This is a performance piece I wrote for Lara Gallagher which was premiered at City Assembly Hall, Dublin in 2019. I performed live electronics.",
+    descriptionga: "",
+    embed: '<iframe width="853" height="480" src="https://www.youtube.com/embed/attO1s7aPQ8?si=P_HBY19WmjH-xbFF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
     image: "",
   },
   {
@@ -432,8 +484,8 @@ export default function ProjectList() {
         return router.locale === 'en' ? 'PERFORMING' : 'TAIBHLÉIRIÚ';
       case 'composing':
         return router.locale === 'en' ? 'COMPOSING' : 'CUMADH';
-      case 'soundtrack':
-        return router.locale === 'en' ? 'SOUNDTRACK' : 'FUAIMRIAN';
+      case 'sounddesign':
+        return router.locale === 'en' ? 'SOUND DESIGN' : 'DEARADH FUAIME';
       case 'arranging':
         return router.locale === 'en' ? 'ARRANGING' : 'COIRIÚ';
       case 'coding':

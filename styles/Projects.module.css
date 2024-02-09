@@ -228,9 +228,9 @@
     background: var(--coding);
 }
 
-.itemTitle.soundtrack,
-.popupCategory.soundtrack {
-    background: var(--soundtrack);
+.itemTitle.sounddesign,
+.popupCategory.sounddesign {
+    background: var(--sounddesign);
 }
 
 .itemTitle.arranging,
@@ -254,8 +254,8 @@
     color: var(--composing);
 }
 
-.soundtrack.hoverEffect:hover {
-    color: var(--soundtrack);
+.sounddesign.hoverEffect:hover {
+    color: var(--sounddesign);
 }
 
 .arranging.hoverEffect:hover {
