@@ -61,6 +61,18 @@ const projects = [
   },
   {
     category: "recording",
+    title: "Princ€ss",
+    year: "2024",
+    infoen: "cello & electronics",
+    infoga: "dordveidhil ⁊ leictreonaic",
+    link: "",
+    descriptionen: "",
+    descriptionga: "",
+    embed: '<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=4009270273/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://wherethetimegoes.bandcamp.com/album/princ-ss">Princ€ss by Princ€ss</a></iframe>',
+    image: "",
+  },
+  {
+    category: "recording",
     title: "UISCE AGUS BEAN",
     year: "2023",
     infoen: "album - cello for Róis",
@@ -334,7 +346,7 @@ const projects = [
     link: "https://www.researchcatalogue.net/view/1592116/1592117",
     descriptionen: "Aduantas was an imporvisation ensemble made up of Pedro Latas, Isaac Barzso, Rose Connolly, Hugo Ariens and I in the Hague, Netherlands. Along with performing I composed <i>Data Is Ephemeral</i> for the ensemble as part of Spring Festival 2022.",
     descriptionga: "",
-    embed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Af8L3GQODZM?si=HZzcXiIEe3iXLIeD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    embed: '<iframe width="853" height="480" src="https://www.youtube.com/embed/Af8L3GQODZM?si=HZzcXiIEe3iXLIeD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
     image: "",
   },
   {
