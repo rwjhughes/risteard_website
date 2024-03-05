@@ -32,7 +32,7 @@ const projects = [
     link: "",
     descriptionen: "So True/Wash is R.Kitt's first release of 2024. It is the first single in a series that will be compiled as an album release next year. These forthcoming singles will explore the depth and range of Kitt’s productions. The first release marks a significant evolution in Kitt’s style.<br><br>So True opens as a misty glitched out ambient track, featuring Risteárd Ó hAodha on cello, before melodically unfolding into a deep, breaky house bopper with a lush vocal from Kitt himself. ",
     descriptionga: "So True/Wash is R.Kitt's first release of 2024. It is the first single in a series that will be compiled as an album release next year. These forthcoming singles will explore the depth and range of Kitt’s productions. The first release marks a significant evolution in Kitt’s style.<br><br>So True opens as a misty glitched out ambient track, featuring Risteárd Ó hAodha on cello, before melodically unfolding into a deep, breaky house bopper with a lush vocal from Kitt himself. ",
-    embed: '<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1890335504/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=1023634741/transparent=true/" seamless><a href="https://rkitt.bandcamp.com/album/so-true-wash">So True/Wash by R.Kitt</a></iframe>',
+    embed: '<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1890335504/size=large/tracklist=false/track=1023634741/transparent=true/" seamless><a href="https://rkitt.bandcamp.com/album/so-true-wash">So True/Wash by R.Kitt</a></iframe>',
     image: "",
   },
   {
