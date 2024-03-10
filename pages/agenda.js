@@ -6,6 +6,30 @@ import { useRouter } from 'next/router';
 import styles from '../styles/Agenda.module.css';
 
 const concerts = [
+  // {
+  //   date: "",
+  //   title: "",
+  //   locationen: "",
+  //   locationga: "",
+  // },
+  {
+    date: "07/04/2024",
+    title: "TBA",
+    locationen: "Scéal na Gaillimhe, An Taibhdhearc, Galway",
+    locationga: "Scéal na Gaillimhe, An Taibhdhearc, Gaillimh",
+  },
+  {
+    date: "23/03/2024",
+    title: "TBA",
+    locationen: "Fibbers, Dublin",
+    locationga: "Fibbers, BÁC",
+  },
+  {
+    date: "15/03/2024",
+    title: "Tráthnóna Ceoil & Scannáin",
+    locationen: "Spiddal Library, Galway",
+    locationga: "Leabharlann an Spidéil, Gaillimh",
+  },
   {
     date: "09/11/2023",
     title: "Cuimhneachán Liam Uí Fhlaithearta",
