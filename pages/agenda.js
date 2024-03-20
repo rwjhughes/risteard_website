@@ -14,15 +14,15 @@ const concerts = [
   // },
   {
     date: "07/04/2024",
-    title: "TBA",
+    title: "Ar An Dé Deiridh",
     locationen: "Scéal na Gaillimhe, An Taibhdhearc, Galway",
     locationga: "Scéal na Gaillimhe, An Taibhdhearc, Gaillimh",
   },
   {
     date: "23/03/2024",
-    title: "TBA",
-    locationen: "Fibbers, Dublin",
-    locationga: "Fibbers, BÁC",
+    title: "Princ€ss",
+    locationen: "Bello Bar, Dublin",
+    locationga: "Bello Bar, BÁC",
   },
   {
     date: "15/03/2024",
