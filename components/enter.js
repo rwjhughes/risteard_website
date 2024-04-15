@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styles from '../styles/Enter.module.css';
 
 const Enter = () => {
-    const [isEntered, setIsEntered] = useState(null);
+    const [isEntered, setIsEntered] = useState(false);
 
     const getRandomRGBColor = () => {
         const r = Math.floor(Math.random() * 256);
@@ -19,7 +19,6 @@ const Enter = () => {
 
     useEffect(() => {
         const hasEntered = localStorage.getItem('hasEntered');
-        setIsEntered(hasEntered === 'true');
         if (hasEntered === 'true') return;
 
         const intervalId = setInterval(() => {
