@@ -8,12 +8,12 @@
     opacity: 1;
     z-index: 99;
     /* transition: opacity 800ms, height 0 800ms, width 0 800ms; */
-    transition: opacity 800ms, height 800ms, width 800ms;
-
+    transition: opacity 800ms;
 }
 
 .container.transparent {
     opacity: 0;
+    display: none;
 }
 
 .text {

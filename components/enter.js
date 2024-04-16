@@ -14,12 +14,10 @@ const Enter = () => {
 
     const handleClick = () => {
         setIsEntered(true);
-        localStorage.setItem('hasEntered', 'true');
     };
 
     useEffect(() => {
-        const hasEntered = localStorage.getItem('hasEntered');
-        if (hasEntered === 'true') return;
+        if (isEntered === true) return;
 
         const intervalId = setInterval(() => {
             const newColor = cycleColor(waveColor);
@@ -29,7 +27,7 @@ const Enter = () => {
         return () => {
             clearInterval(intervalId);
         };
-    }, [waveColor]);
+    }, [waveColor, isEntered]);
 
     const cycleColor = (color) => {
         const colorRegex = /^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/; // Regex pattern for matching RGB values
