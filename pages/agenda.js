@@ -13,6 +13,24 @@ const concerts = [
   //   locationga: "",
   // },
   {
+    date: "30/06/2024",
+    title: "Princ€ss",
+    locationen: "The Hug and Pint, Glasgow, Scotland",
+    locationga: "The Hug and Pint, Glaschú, Albain",
+  },
+  {
+    date: "28/06/2024",
+    title: "Princ€ss",
+    locationen: "Cafe Oto, London, England",
+    locationga: "Cafe Oto, Londain, Sasana",
+  },
+  {
+    date: "27/06/2024",
+    title: "An Tionól Gaeltachta, Conradh na Gaeilge",
+    locationen: "The Emigrants Commemorative Centre, Carna, Galway",
+    locationga: "Ionad Cuimhneacháin na nImirceach, Carna, Gaillimh",
+  },
+  {
     date: "07/04/2024",
     title: "Ar An Dé Deiridh",
     locationen: "Scéal na Gaillimhe, An Taibhdhearc, Galway",
