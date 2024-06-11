@@ -88,7 +88,7 @@ export default function Home() {
             <Link href="https://soundcloud.com/risteard0" className="sc" target="_blank">
               SC
             </Link>
-            <Link href="mailto:richard@hughes.ie" className="email" target="_blank">
+            <Link href="mailto:mise@risteard.ie" className="email" target="_blank">
               {t("common:email")}
             </Link>
           </div>
