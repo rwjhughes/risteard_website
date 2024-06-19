@@ -13,6 +13,24 @@ const concerts = [
   //   locationga: "",
   // },
   {
+    date: "24/07/2024",
+    title: "Ar An Dé Deiridh",
+    locationen: "Áras Pobail Chorr na Móna, Galway",
+    locationga: "Áras Pobail Chorr na Móna, Gaillimh",
+  },
+  {
+    date: "18/07/2024",
+    title: "Ar An Dé Deiridh",
+    locationen: "Seanscoil Sailearna, Indreabhán, Galway",
+    locationga: "Seanscoil Sailearna, Indreabhán, Gaillimh",
+  },
+  {
+    date: "16/07/2024",
+    title: "Ar An Dé Deiridh",
+    locationen: "Áras Éanna, Inis Oírr, Galway",
+    locationga: "Áras Éanna, Inis Oírr, Gaillimh",
+  },
+  {
     date: "30/06/2024",
     title: "Princ€ss",
     locationen: "The Hug and Pint, Glasgow, Scotland",
