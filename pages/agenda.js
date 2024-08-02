@@ -13,6 +13,12 @@ const concerts = [
   //   locationga: "",
   // },
   {
+    date: "21/08/2024",
+    title: "Princ€ss",
+    locationen: "Féile na Gréine, Limerick",
+    locationga: "Féile na Gréine, Luimneach",
+  },
+  {
     date: "24/07/2024",
     title: "Ar An Dé Deiridh",
     locationen: "Áras Pobail Chorr na Móna, Galway",
