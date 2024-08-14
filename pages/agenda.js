@@ -19,6 +19,12 @@ const concerts = [
     locationga: "Féile na Gréine, Luimneach",
   },
   {
+    date: "19/08/2024",
+    title: "Ceadal Ceoil",
+    locationen: "Seachtain Náisiúnta na hOidhreachta, City Hall, Dublin",
+    locationga: "National Heritage Week, Halla na Cathrach, BÁC",
+  },
+  {
     date: "24/07/2024",
     title: "Ar An Dé Deiridh",
     locationen: "Áras Pobail Chorr na Móna, Galway",
