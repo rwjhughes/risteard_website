@@ -21,8 +21,8 @@ const concerts = [
   {
     date: "19/08/2024",
     title: "Ceadal Ceoil",
-    locationen: "Seachtain Náisiúnta na hOidhreachta, City Hall, Dublin",
-    locationga: "National Heritage Week, Halla na Cathrach, BÁC",
+    locationen: "National Heritage Week, City Hall, Dublin",
+    locationga: "Seachtain Náisiúnta na hOidhreachta, Halla na Cathrach, BÁC",
   },
   {
     date: "24/07/2024",
