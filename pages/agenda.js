@@ -13,6 +13,24 @@ const concerts = [
   //   locationga: "",
   // },
   {
+    date: "22/09/2024",
+    title: "Son of the Land",
+    locationen: "Earth Rising, IMMA, Dublin",
+    locationga: "Earth Rising, IMMA, BÁC",
+  },
+  {
+    date: "21/09/2024",
+    title: "Son of the Land",
+    locationen: "Earth Rising, IMMA, Dublin",
+    locationga: "Earth Rising, IMMA, BÁC",
+  },
+  {
+    date: "20/09/2024",
+    title: "Fáistineach",
+    locationen: "Maam Community Centre, Galway",
+    locationga: "Ionad Pobail an Mháma, Gaillimh",
+  },
+  {
     date: "21/08/2024",
     title: "Princ€ss",
     locationen: "Féile na Gréine, Limerick",
