@@ -25,6 +25,18 @@ const projects = [
   // },
   {
     category: "sounddesign",
+    title: "Son of the Land",
+    year: "2024",
+    infoen: "music for play by Harry Hennessy, performed at Earth Rising, IMMA.",
+    infoga: "ceol don dráma le Harry Hennessy, taibhithe ag an bhféile Earth Rising, IMMA.",
+    link: "",
+    descriptionen: "",
+    descriptionga: "",
+    embed: '',
+    image: "",
+  },
+  {
+    category: "sounddesign",
     title: "Ar An Dé Deiridh",
     year: "2024",
     infoen: "music and sound design for new Irish language play produced by Gliogar",
@@ -54,7 +66,7 @@ const projects = [
     infoen: "cello",
     infoga: "dordveidhil",
     link: "https://wherethetimegoes.bandcamp.com/album/princ-ss",
-    descriptionen: "After the release of the eponymous album I have play gigs with Princ€ss in Limerick, Dublin, London and Glasgow.",
+    descriptionen: "After the release of the eponymous album I have played gigs with Princ€ss in Limerick, Dublin, London and Glasgow.",
     descriptionga: "Théis gur éisíodh an t-albam Princ€ss rinne mé gigeanna leo i Luimneach, Baile Átha Cliath, Londain agus Glaschú.",
     embed: '<iframe width="853" height="480" src="https://www.youtube.com/embed/qc-cNniZDKE?si=F5adDFCdO-JB9xeD&amp;start=296" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
     image: "",
@@ -85,10 +97,22 @@ const projects = [
   },
   {
     category: "recording",
+    title: "Big Blue",
+    year: "2024",
+    infoen: "album - cello for Henry Earnest",
+    infoga: "albam - dordveidhil do Henry Earnest",
+    link: "",
+    descriptionen: "",
+    descriptionga: "",
+    embed: '<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2581071232/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=1980897976/transparent=true/" seamless><a href="https://henryearnest.bandcamp.com/album/big-blue">Big Blue by Henry Earnest</a></iframe>',
+    image: "",
+  },
+  {
+    category: "recording",
     title: "Princ€ss",
     year: "2024",
-    infoen: "cello & electronics",
-    infoga: "dordveidhil ⁊ leictreonaic",
+    infoen: "album - cello & electronics",
+    infoga: "albam - dordveidhil ⁊ leictreonaic",
     link: "",
     descriptionen: "",
     descriptionga: "",
@@ -99,8 +123,8 @@ const projects = [
     category: "recording",
     title: "So True",
     year: "2024",
-    infoen: "cello",
-    infoga: "dordveidhil",
+    infoen: "single - cello",
+    infoga: "singil - dordveidhil",
     link: "",
     descriptionen: "So True/Wash is R.Kitt's first release of 2024. It is the first single in a series that will be compiled as an album release next year. These forthcoming singles will explore the depth and range of Kitt’s productions. The first release marks a significant evolution in Kitt’s style.<br><br>So True opens as a misty glitched out ambient track, featuring Risteárd Ó hAodha on cello, before melodically unfolding into a deep, breaky house bopper with a lush vocal from Kitt himself. ",
     descriptionga: "So True/Wash is R.Kitt's first release of 2024. It is the first single in a series that will be compiled as an album release next year. These forthcoming singles will explore the depth and range of Kitt’s productions. The first release marks a significant evolution in Kitt’s style.<br><br>So True opens as a misty glitched out ambient track, featuring Risteárd Ó hAodha on cello, before melodically unfolding into a deep, breaky house bopper with a lush vocal from Kitt himself. ",
@@ -117,6 +141,18 @@ const projects = [
     descriptionen: "This compilation album is the fifth release from the Department of Energy which resists the free market and remembers the ancestors, featuring 40+ Irish experimental artists. <i>Romhainn Amach</i> is a track I made for the album, using a distorted sample of Máirtín Ó Cadhain with a repitched live viola delay.",
     descriptionga: "Tá an albam díolama seo an cúigiú eisiúint ó the Department of Energy ina bhfuil os cionn 40 ealaíontóir. Is rian don albam é <i>Romhainn Amach</i> a mbaineann úsáid as sampla Mháirtín Uí Chadhain as riocht le <i>delay</i> violá beo atá curtha níos ísle.",
     embed: '<iframe style="border: 0; width: 350px; height: 470px; " src="https://bandcamp.com/EmbeddedPlayer/album=3706100408/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=483599109/transparent=true/" seamless><a href="https://thedepartmentofenergy.bandcamp.com/album/may-day-landscape-mixtape">May Day (Landscape Mixtape) by Richard Hughes</a></iframe>',
+    image: "",
+  },
+  {
+    category: "video",
+    title: "",
+    year: "",
+    infoen: "coming soon...",
+    infoga: "ar an mbealach...",
+    link: "",
+    descriptionen: "",
+    descriptionga: "",
+    embed: '',
     image: "",
   },
   {
@@ -530,13 +566,15 @@ export default function ProjectList() {
       case 'performing':
         return router.locale === 'en' ? 'PERFORMING' : 'TAIBHLÉIRIÚ';
       case 'composing':
-        return router.locale === 'en' ? 'COMPOSING' : 'CUMADH';
+        return router.locale === 'en' ? 'COMPOSING' : 'CUMADÓIREACHT';
       case 'sounddesign':
         return router.locale === 'en' ? 'SOUND DESIGN' : 'DEARADH FUAIME';
       case 'arranging':
         return router.locale === 'en' ? 'ARRANGING' : 'COIRIÚ';
       case 'coding':
         return router.locale === 'en' ? 'CODING' : 'CÓDÚ';
+      case 'video':
+        return router.locale === 'en' ? 'VIDEO' : 'FÍSEÁN';
       default:
         return category;
     }

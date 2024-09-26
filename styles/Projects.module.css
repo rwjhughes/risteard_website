@@ -238,6 +238,11 @@
     background: var(--arranging);
 }
 
+.itemTitle.video,
+.popupCategory.video {
+    background: var(--video);
+}
+
 .releases.hoverEffect:hover {
     color: var(--releases);
 }
@@ -263,5 +268,9 @@
 }
 
 .coding.hoverEffect:hover {
+    color: var(--coding);
+}
+
+.video.hoverEffect:hover {
     color: var(--coding);
 }

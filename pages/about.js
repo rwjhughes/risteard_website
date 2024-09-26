@@ -40,7 +40,7 @@ export default function About() {
 
                     <div className={styles.text}>{t("about:text3")}
                         <a className={styles.link} href="https://gaudeamus.nl/" target="_blank">Gaudeamus Festival (NL)</a>,&nbsp;
-                        <a className={styles.link} href="https://www.instagram.com/paikka.ga" target="_blank">Paikka (HU)</a>&nbsp;
+                        <a className={styles.link} href="https://paikka.xyz/kiberdob/" target="_blank">Paikka (HU)</a>&nbsp;
                         {t("about:text4")}
                     </div>
 
