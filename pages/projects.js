@@ -615,10 +615,9 @@ export default function ProjectList() {
   };
 
   const [selectedProject, setSelectedProject] = useState(null);
-
   const groupedProjects = groupProjectsByCategory(projects);
-
   const [columns, setColumns] = useState(1);
+  const [showAll, setShowAll] = useState({});
 
   const activeStyle = {
     border: 'rgb(181, 181, 181) inset 1px',
@@ -649,6 +648,12 @@ export default function ProjectList() {
   const columnCount = {
     columnCount: columns,
   };
+  const toggleShowAll = (category) => {
+    setShowAll((prev) => ({
+      ...prev,
+      [category]: !prev[category],
+    }));
+  };
 
   return (
     <div>
@@ -662,35 +667,38 @@ export default function ProjectList() {
       <div className={styles.container} style={columnCount}>
 
         {Object.keys(groupedProjects).map((category, index) => {
-          const [showAll, setShowAll] = useState({});
-
-          const toggleShowAll = (category) => {
-            setShowAll((prev) => ({
-              ...prev,
-              [category]: !prev[category],
-            }));
-          };
-
           const isExpanded = showAll[category];
-          const projectsToShow = isExpanded ? groupedProjects[category] : groupedProjects[category].slice(0, 4);
+          const projectsToShow = isExpanded
+            ? groupedProjects[category]
+            : groupedProjects[category].slice(0, 4);
 
           return (
             <div key={category} className={styles.item} id={index}>
-              <h2 className={`${styles.itemTitle} ${styles[category]}`}>{translateCategory(category)}</h2>
+              <h2 className={`${styles.itemTitle} ${styles[category]}`}>
+                {translateCategory(category)}
+              </h2>
               <div className={styles.projectBundle}>
-                {projectsToShow.map((project, index) => (
-                  <div key={index} className={`${styles.projectSingle} ${styles[category]} ${styles.hoverEffect}`} onClick={() => setSelectedProject(project)}>
+                {projectsToShow.map((project, idx) => (
+                  <div
+                    key={idx}
+                    className={`${styles.projectSingle} ${styles[category]} ${styles.hoverEffect}`}
+                    onClick={() => setSelectedProject(project)}
+                  >
                     <div>
                       <h3>{project.title}</h3>
                     </div>
                     <p>
-                      {project.year}, {router.locale === 'en' ? project.infoen : project.infoga}
+                      {project.year},{' '}
+                      {router.locale === 'en' ? project.infoen : project.infoga}
                     </p>
                   </div>
                 ))}
               </div>
               {groupedProjects[category].length > 4 && (
-                <button onClick={() => toggleShowAll(category)} className={styles.seeMore}>
+                <button
+                  onClick={() => toggleShowAll(category)}
+                  className={styles.seeMore}
+                >
                   {isExpanded ? '' : t("projects:more")}
                 </button>
               )}
