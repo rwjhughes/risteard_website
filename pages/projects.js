@@ -10,7 +10,6 @@ import styles from '../styles/Projects.module.css';
 const projects = [
   // youtube embed: width=853 hieght=480
 
-
   // {
   //   category: "",
   //   title: "",
@@ -23,6 +22,19 @@ const projects = [
   //   embed: '',
   //   image: "",
   // },
+
+  {
+    category: "coding",
+    title: "Military Plane Tracker",
+    year: "2024",
+    infoen: "Automatic updates on foreign and domestic military planes in Shannon and Aldergrove airports as Ireland's neutrality is eroded.",
+    infoga: "Nuashonraithe ar eitleáin mhileata in aerfoirt na Sionnaine agus an Gharráin Fhearnóige agus neodracht na hÉireann ag creimeadh.",
+    link: "https://t.me/militarytracker",
+    descriptionen: "",
+    descriptionga: "",
+    embed: '',
+    image: "",
+  },
   {
     category: "sounddesign",
     title: "Son of the Land",
@@ -32,7 +44,7 @@ const projects = [
     link: "",
     descriptionen: "",
     descriptionga: "",
-    embed: '',
+    embed: '<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1914330047%3Fsecret_token%3Ds-46Z5B9Vyefd&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/risteard0" title="Risteárd Ó hAodha" target="_blank" style="color: #cccccc; text-decoration: none;">Risteárd Ó hAodha</a> · <a href="https://soundcloud.com/risteard0/sets/son-of-the-land/s-46Z5B9Vyefd" title="Son of the Land" target="_blank" style="color: #cccccc; text-decoration: none;">Son of the Land</a></div>',
     image: "",
   },
   {
@@ -44,7 +56,7 @@ const projects = [
     link: "",
     descriptionen: "I came up with the play's concept, composed the music and produced the play. The music is written for cello and wire strung harp, played by myself and Méabh McKenna, imitating medieval and traditional styles. <i>Ar An Dé Deiridh</i> was premiered in An Taibhdhearc and brought on tour in Conamara and Árainn July 2024.",
     descriptionga: "Rinne mé coincheap an dráma, an ceol agus léirigh mé an dráma. Scríobhadh an ceol do dhordveidhil agus chláirseach shreinge, seinnte agamsa agus ag Méabh McKenna, ag déanamh aithris ar cheol meánaoise agus traidisiúnta. Seoladh <i>Ar An Dé Deiridh</i> sa Taibhdhearc agus cuireadh ar chamchuairt é i gConamara agus Árainn Iúil 2024.",
-    embed: '',
+    embed: '<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1914320883%3Fsecret_token%3Ds-lU0KMArhjOw&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/risteard0" title="Risteárd Ó hAodha" target="_blank" style="color: #cccccc; text-decoration: none;">Risteárd Ó hAodha</a> · <a href="https://soundcloud.com/risteard0/sets/ar-an-de-deiridh/s-lU0KMArhjOw" title="Ar An Dé Deiridh" target="_blank" style="color: #cccccc; text-decoration: none;">Ar An Dé Deiridh</a></div>',
     image: "/images/projects/aadd.jpg",
   },
   {
@@ -543,7 +555,11 @@ const projects = [
 ];
 
 const groupProjectsByCategory = (projects) => {
-  return projects.reduce((acc, project) => {
+  // Define the hardcoded order of categories
+  const categoryOrder = ['sounddesign', 'performing', 'recording', 'releases', 'arranging', 'composing', 'coding', 'video'];
+
+  // Step 1: Group projects by category
+  const groupedProjects = projects.reduce((acc, project) => {
     const category = project.category;
     if (!acc[category]) {
       acc[category] = [];
@@ -551,7 +567,25 @@ const groupProjectsByCategory = (projects) => {
     acc[category].push(project);
     return acc;
   }, {});
+
+  // Step 2: Order the categories based on the predefined order
+  const orderedGroups = {};
+  for (const category of categoryOrder) {
+    if (groupedProjects[category]) {
+      orderedGroups[category] = groupedProjects[category];
+    }
+  }
+
+  // Include any additional categories not in the hardcoded order
+  for (const category in groupedProjects) {
+    if (!orderedGroups[category]) {
+      orderedGroups[category] = groupedProjects[category];
+    }
+  }
+
+  return orderedGroups;
 };
+
 
 export default function ProjectList() {
   let router = useRouter();
@@ -625,30 +659,44 @@ export default function ProjectList() {
         <meta name="description" content="List of projects" />
       </Head>
       <Navbar />
-      {/* <h1>
-        {t("projects:title")}
-      </h1> */}
       <div className={styles.container} style={columnCount}>
 
-        {Object.keys(groupedProjects).map((category, index) => (
-          <div key={category} className={styles.item} id={index}>
-            <h2 className={`${styles.itemTitle} ${styles[category]}`}>{translateCategory(category)}</h2>
-            <div className={styles.projectBundle}>
-              {groupedProjects[category].map((project, index) => (
-                <div key={index} className={`${styles.projectSingle} ${styles[category]} ${styles.hoverEffect}`} onClick={() => setSelectedProject(project)}>
-                  <div>
-                    <h3>{project.title}</h3>
+        {Object.keys(groupedProjects).map((category, index) => {
+          const [showAll, setShowAll] = useState({});
+
+          const toggleShowAll = (category) => {
+            setShowAll((prev) => ({
+              ...prev,
+              [category]: !prev[category],
+            }));
+          };
+
+          const isExpanded = showAll[category];
+          const projectsToShow = isExpanded ? groupedProjects[category] : groupedProjects[category].slice(0, 4);
+
+          return (
+            <div key={category} className={styles.item} id={index}>
+              <h2 className={`${styles.itemTitle} ${styles[category]}`}>{translateCategory(category)}</h2>
+              <div className={styles.projectBundle}>
+                {projectsToShow.map((project, index) => (
+                  <div key={index} className={`${styles.projectSingle} ${styles[category]} ${styles.hoverEffect}`} onClick={() => setSelectedProject(project)}>
+                    <div>
+                      <h3>{project.title}</h3>
+                    </div>
+                    <p>
+                      {project.year}, {router.locale === 'en' ? project.infoen : project.infoga}
+                    </p>
                   </div>
-                  <p>
-                    {project.year},{' '}
-                    {router.locale === 'en' ? project.infoen : project.infoga}
-                  </p>
-                </div>
-              ))}
+                ))}
+              </div>
+              {groupedProjects[category].length > 4 && (
+                <button onClick={() => toggleShowAll(category)} className={styles.seeMore}>
+                  {isExpanded ? '' : t("projects:more")}
+                </button>
+              )}
             </div>
-          </div>
-        ))
-        }
+          );
+        })}
       </div>
 
       {selectedProject && (

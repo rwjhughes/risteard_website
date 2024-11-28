@@ -13,10 +13,17 @@ const concerts = [
   //   locationga: "",
   // },
   {
-    date: "22/09/2024",
-    title: "Son of the Land",
-    locationen: "Earth Rising, IMMA, Dublin",
-    locationga: "Earth Rising, IMMA, BÁC",
+    date: "23/11/2024",
+    title: "w Róis & Harry Hennessy",
+    title: "le Róis & Harry Hennessy",
+    locationen: "Daylight, Glasnevin, Dublin",
+    locationga: "Daylight, Glas Naíon, BÁC",
+  },
+  {
+    date: "02/11/2024",
+    title: "Gathering Darkness, DOE",
+    locationen: "BASE, Dublin",
+    locationga: "BASE, BÁC",
   },
   {
     date: "21/09/2024",
