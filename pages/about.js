@@ -21,10 +21,9 @@ export default function About() {
                 <div className={styles.bio}>
                     <div>{t("about:text0")}</div>
                     <div className={styles.text}>{t("about:text1")}
-                        <a className={styles.link} href="https://roseconnolly.bandcamp.com/album/uisce-agus-bean" target="_blank">Róis</a>,&nbsp;
+                        <a className={styles.link} href="https://roismusic.ie/" target="_blank">Róis</a>,&nbsp;
                         <a className={styles.link} href="https://www.instagram.com/gemmadunleavy_/" target="_blank">Gemma Dunleavy</a>,&nbsp;
-                        <a className={styles.link} href="https://seanbeing.com/" target="_blank">Seán Being</a>,&nbsp;
-                        <a className={styles.link} href="https://henryearnest.bandcamp.com/" target="_blank">Henry Earnest</a>&nbsp;
+                        <a className={styles.link} href="https://wherethetimegoes.bandcamp.com/album/princ-ss" target="_blank">Princ€ss</a>&nbsp;
                         {t("about:and")}&nbsp;
                         <a className={styles.link} href="https://www.trinityorchestra.com/" target="_blank">Trinity Orchestra</a>
                     </div>
