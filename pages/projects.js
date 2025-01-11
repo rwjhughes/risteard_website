@@ -8,7 +8,7 @@ import React, { useEffect, useState } from 'react';
 import styles from '../styles/Projects.module.css';
 
 const projects = [
-  // youtube embed: width=853 hieght=480
+  // youtube embed: width=853 height=480
 
   // {
   //   category: "",
@@ -54,9 +54,9 @@ const projects = [
     infoen: "music and sound design for new Irish language play produced by Gliogar",
     infoga: "ceol agus dearadh fuaime don dráma a bhí léirithe ag Gliogar",
     link: "",
-    descriptionen: "I came up with the play's concept, composed the music and produced the play. The music is written for cello and wire strung harp, played by myself and Méabh McKenna, imitating medieval and traditional styles. <i>Ar An Dé Deiridh</i> was premiered in An Taibhdhearc and brought on tour in Conamara and Árainn July 2024.",
+    descriptionen: "I created the play's concept, composed the music and produced the play. The music is written for cello and wire strung harp, played by myself and Méabh McKenna, imitating medieval and traditional styles. <i>Ar An Dé Deiridh</i> was premiered in An Taibhdhearc and brought on tour in Conamara and Árainn July 2024.",
     descriptionga: "Rinne mé coincheap an dráma, an ceol agus léirigh mé an dráma. Scríobhadh an ceol do dhordveidhil agus chláirseach shreinge, seinnte agamsa agus ag Méabh McKenna, ag déanamh aithris ar cheol meánaoise agus traidisiúnta. Seoladh <i>Ar An Dé Deiridh</i> sa Taibhdhearc agus cuireadh ar chamchuairt é i gConamara agus Árainn Iúil 2024.",
-    embed: '<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1914320883%3Fsecret_token%3Ds-lU0KMArhjOw&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/risteard0" title="Risteárd Ó hAodha" target="_blank" style="color: #cccccc; text-decoration: none;">Risteárd Ó hAodha</a> · <a href="https://soundcloud.com/risteard0/sets/ar-an-de-deiridh/s-lU0KMArhjOw" title="Ar An Dé Deiridh" target="_blank" style="color: #cccccc; text-decoration: none;">Ar An Dé Deiridh</a></div>',
+    embed: '<iframe width="853" height="480" src="https://www.youtube.com/embed/ivLFfn2lWqU?si=9dqSuLQp2sqCBtaB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
     image: "/images/projects/aadd.jpg",
   },
   {
