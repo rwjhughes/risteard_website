@@ -56,7 +56,7 @@ const projects = [
     link: "",
     descriptionen: "I created the play's concept, composed the music and produced the play. The music is written for cello and wire strung harp, played by myself and Méabh McKenna, imitating medieval and traditional styles. <i>Ar An Dé Deiridh</i> was premiered in An Taibhdhearc and brought on tour in Conamara and Árainn July 2024. The play will tour secondary schools in the Galway and Mayo Gaeltachts in Spring 2025.",
     descriptionga: "Rinne mé coincheap an dráma, an ceol agus léirigh mé an dráma. Scríobhadh an ceol do dhordveidhil agus chláirseach shreinge, seinnte agamsa agus ag Méabh McKenna, ag déanamh aithris ar cheol meánaoise agus traidisiúnta. Seoladh <i>Ar An Dé Deiridh</i> sa Taibhdhearc agus cuireadh ar chamchuairt é i gConamara agus Árainn Iúil 2024. Beidh an dráma léirithe i meánscoileanna i nGaillimh agus Maigh Eo san earrach 2025.",
-    embed: '<iframe width="853" height="480" src="https://www.youtube.com/embed/ivLFfn2lWqU?si=9dqSuLQp2sqCBtaB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+    embed: '<iframe width="853" height="480" src="https://www.youtube.com/embed/jQqkZWe4hZY?si=9PVdCyoQWmrryldc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
     image: "/images/projects/aadd.jpg",
   },
   {
@@ -259,7 +259,7 @@ const projects = [
     infoen: "soundtrack production for exhibition",
     infoga: "léiriúchán fuaimriain don taispeántas",
     link: "http://aras-eanna.ie/en/project/old-aran-in-colour/",
-    descriptionen: "Working with MacDara Ó Conaola, along with John Breslin and Sarah-Anne Buckley of Old Ireland in Colour, I produced the soundtrack which accompanied an exhibition of colourised photos from the Aran Islands. The soundtrack was comprised of traditional songs from the Aran sung by MacDara which I added accompaniment to and produced other tracks with various musicians.",
+    descriptionen: "Working with MacDara Ó Conaola, along with John Breslin and Sarah-Anne Buckley of Old Ireland in Colour, I produced the soundtrack which accompanied an exhibition of colourised photos from the Aran Islands. The soundtrack was comprised of traditional songs from Aran sung by MacDara which I added accompaniment to and produced other tracks with various musicians.",
     descriptionga: "",
     embed: '',
     image: "/images/projects/oldaran.jpg",
