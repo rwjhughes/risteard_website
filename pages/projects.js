@@ -22,7 +22,18 @@ const projects = [
   //   embed: '',
   //   image: "",
   // },
-
+  {
+    category: "recording",
+    title: "An Lá Ba",
+    year: "2025",
+    infoen: "album - piano for Dysania",
+    infoga: "albam - pianó do Dysania",
+    link: "",
+    descriptionen: "",
+    descriptionga: "",
+    embed: '<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1960415145/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=1812177271/transparent=true/" seamless><a href="https://dysania1.bandcamp.com/album/an-l-ba">An Lá Ba by Dysania</a></iframe>',
+    image: "",
+  },
   {
     category: "coding",
     title: "Military Plane Tracker",
