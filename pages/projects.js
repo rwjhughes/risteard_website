@@ -24,6 +24,18 @@ const projects = [
   // },
   {
     category: "recording",
+    title: "Entrance Places",
+    year: "2025",
+    infoen: "single - piano for Rory Sweeney",
+    infoga: "singil - pianó do Rory Sweeney",
+    link: "",
+    descriptionen: "single - piano for Rory Sweeney</br>featuring Saoirse Miller, Róis and Risteárd Ó hAodha",
+    descriptionga: "singil - pianó do Rory Sweeney</br>le Saoirse Miller, Róis agus Risteárd Ó hAodha",
+    embed: '<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1492355137/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://rory2.bandcamp.com/album/entrance-places-ft-saoirse-miller-r-is-riste-rd-haodha">Entrance Places (ft. Saoirse Miller, Róis &amp; Risteárd Ó hAodha) by Rory Sweeney</a></iframe>',
+    image: "",
+  },
+  {
+    category: "recording",
     title: "An Lá Ba",
     year: "2025",
     infoen: "album - piano for Dysania",

@@ -13,6 +13,18 @@ const concerts = [
   //   locationga: "",
   // },
   {
+    date: "02/08/2025",
+    title: "Róis",
+    locationen: "All Together Now, Waterford",
+    locationga: "All Together Now, Port Láirge",
+  },
+  {
+    date: "26/07/2025",
+    title: "Bunchlann/Buncharraig",
+    locationen: "Liverpool Biennial, England",
+    locationga: "Liverpool Biennial, Sasana",
+  },
+  {
     date: "17/05/2025",
     title: "Ar An Dé Deiridh",
     locationen: "Éigse na Bruiséile, Belgium",
