@@ -13,6 +13,42 @@ const concerts = [
   //   locationga: "",
   // },
   {
+    date: "13/12/2025",
+    title: "Olan Monk",
+    locationen: "Bello Bar, Dublin",
+    locationga: "Bello Bar, BÁC",
+  },
+  {
+    date: "11/12/2025",
+    title: "Olan Monk",
+    locationen: "Ormside Projects, London, England",
+    locationga: "Ormside Projects, Londain, Sasana",
+  },
+  {
+    date: "31/10/2025",
+    title: "Gliogar, Olan Monk",
+    locationen: "Nuns Island Theatre, Galway",
+    locationga: "Nuns Island Theatre, Gaillimh",
+  },
+  {
+    date: "12/10/2025",
+    title: "Dowland Downloaded",
+    locationen: "Maureen's, Cork",
+    locationga: "Maureen's, Corcaigh",
+  },
+  {
+    date: "11/10/2025",
+    title: "Dowland Downloaded",
+    locationen: "1 Little Green Street, Dublin",
+    locationga: "1 Sráid na Faiche Bige, BÁC",
+  },
+  {
+    date: "27/09/2025",
+    title: "Dysania",
+    locationen: "Dorn san Aer, Gaoth Dobhair, Donegal",
+    locationga: "Dorn san Aer, Gaoth Dobhair, Tír Chonaill",
+  },
+  {
     date: "02/08/2025",
     title: "Róis",
     locationen: "All Together Now, Waterford",
