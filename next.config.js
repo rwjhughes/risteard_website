@@ -13,7 +13,7 @@ const nextConfig = {
       },
       {
         source: '/quadrilles',
-        destination: 'https://on.soundcloud.com/Psj8Z',
+        destination: 'https://soundcloud.com/risteard0/clew-bay-and-croagh-patrick/s-YVIcLUEn1IN',
         permanent: false,
       },
       {
