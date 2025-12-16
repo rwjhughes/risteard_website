@@ -13,6 +13,18 @@ const concerts = [
   //   locationga: "",
   // },
   {
+    date: "21/12/2025",
+    title: "Ambient Orbit, RTÉ Lyric FM",
+    locationen: "Listoghil, Sligo",
+    locationga: "Lios an tSeagail, Sligeach",
+  },
+  {
+    date: "19/12/2025",
+    title: "The Tower",
+    locationen: "Starling, Limerick",
+    locationga: "Starling, Luimneach",
+  },
+  {
     date: "13/12/2025",
     title: "Olan Monk",
     locationen: "Bello Bar, Dublin",
