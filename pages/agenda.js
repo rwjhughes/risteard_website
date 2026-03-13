@@ -13,6 +13,42 @@ const concerts = [
   //   locationga: "",
   // },
   {
+    date: "03/05/2026",
+    title: "Olan Monk",
+    locationen: "Faoin Tuath Festival, Common Knowledge, Clare",
+    locationga: "Faoin Tuath Festival, Common Knowledge, Clár",
+  },
+  {
+    date: "17/04/2026",
+    title: "Olan Monk",
+    locationen: "Croílár Festival, Athlone, Westmeath",
+    locationga: "Croílár Festival, Áth Luain, An Iarmhí",
+  },
+  {
+    date: "04/04/2026",
+    title: "Olan Monk",
+    locationen: "BRDCST Festival, Brussels, Belgium",
+    locationga: "BRDCST Festival, An Bhruiséil, An Bheilg",
+  },
+  {
+    date: "21/03/2026",
+    title: "Mythlantics",
+    locationen: "Limerick City Gallery of Art",
+    locationga: "Gailearaí Ealaíne Chathair Luimnigh",
+  },
+  {
+    date: "20/03/2026",
+    title: "Local Resonance w/ OddNed & Áine Gallagher",
+    locationen: "Bello Bar, Dublin",
+    locationga: "Bello Bar, BÁC",
+  },
+  {
+    date: "22/01/2026",
+    title: "Trasna",
+    locationen: "The Doublet, Glasgow, Scotland",
+    locationga: "The Doublet, Glaschú, Albain",
+  },
+  {
     date: "21/12/2025",
     title: "Ambient Orbit, RTÉ Lyric FM",
     locationen: "Listoghil, Sligo",
