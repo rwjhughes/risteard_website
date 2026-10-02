@@ -23,6 +23,18 @@ const projects = [
   //   image: "",
   // },
   {
+    category: "coding",
+    title: "Cartlann TG4",
+    year: "2026",
+    infoen: "Full stack web developer for new TG4 archive service",
+    infoga: "Forbróir suíomh don seirbhís nua Cartlann TG4",
+    link: "https://www.cartlann.tg4.ie",
+    descriptionen: "",
+    descriptionga: "",
+    embed: '',
+    image: "/images/projects/cartlann_tg4.jpg",
+  },
+  {
     category: "recording",
     title: "Songs for Nothing",
     year: "2025",
@@ -253,9 +265,9 @@ const projects = [
   {
     category: "arranging",
     title: "Glasshouse",
-    year: "2021",
-    infoen: "arranged for Prince and Kate Bush sets",
-    infoga: "coiríodh seiteanna Prince agus Kate Bush",
+    year: "2021, 2026",
+    infoen: "arranged for Phil Lynott, Prince and Kate Bush sets",
+    infoga: "coiríodh seiteanna Phil Lynott, Prince agus Kate Bush",
     link: "https://www.musicglasshouse.com/",
     descriptionen: "I arranged songs for Glasshouse for their Prince and Kate Bush sets which are played at festivals nationally.",
     descriptionga: "Coiríodh amhráin do Glasshouse dá seiteanna Prince agus Kate Bush agam a bhíonns á gcasadh ag féilte ar fud na tíre.",
@@ -591,7 +603,7 @@ const projects = [
 
 const groupProjectsByCategory = (projects) => {
   // Define the hardcoded order of categories
-  const categoryOrder = ['sounddesign', 'performing', 'recording', 'releases', 'arranging', 'composing', 'coding', 'video'];
+  const categoryOrder = ['recording', 'sounddesign', 'performing', 'releases', 'arranging', 'coding', 'composing', 'video'];
 
   // Step 1: Group projects by category
   const groupedProjects = projects.reduce((acc, project) => {
