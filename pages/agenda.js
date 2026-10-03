@@ -38,6 +38,12 @@ const concerts = [
     locationga: "Féile na Gréine, Luimneach",
   },
   {
+    date: "12/08/2026",
+    title: "File na Farraige",
+    locationen: "Tibradden Cairn, Dublin",
+    locationga: "Cairn Thigh Bhródáin, BÁC",
+  },
+  {
     date: "19/06/2026",
     title: "Olan Monk",
     locationen: "Áras Éanna, Inis Oírr, Galway",
