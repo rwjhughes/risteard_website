@@ -71,18 +71,6 @@ const projects = [
     image: "",
   },
   {
-    category: "coding",
-    title: "Military Plane Tracker",
-    year: "2024",
-    infoen: "Automatic updates on foreign and domestic military planes in Shannon and Aldergrove airports as Ireland's neutrality is eroded.",
-    infoga: "Nuashonraithe ar eitleáin mhileata in aerfoirt na Sionnaine agus an Gharráin Fhearnóige agus neodracht na hÉireann ag creimeadh.",
-    link: "https://t.me/militarytracker",
-    descriptionen: "",
-    descriptionga: "",
-    embed: '',
-    image: "",
-  },
-  {
     category: "sounddesign",
     title: "Son of the Land",
     year: "2024",
