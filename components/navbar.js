@@ -1,13 +1,11 @@
-import React from "react";
 import Link from 'next/link';
 import styles from '../styles/Nav.module.css';
 import useTranslation from 'next-translate/useTranslation';
 import { useRouter } from 'next/router'
-import Enter from '@/components/enter.js'
 
 export default function NavigationBar() {
   let router = useRouter();
-  let { t } = useTranslation();
+  let { t } = useTranslation('common');
 
   const activeStyle = {
     border: 'rgb(181, 181, 181) inset 1px',
@@ -20,6 +18,8 @@ export default function NavigationBar() {
     borderBottom: '2px solid red',
     color: 'rgba(255, 255, 255, 0.6)',
   };
+
+  const writingPage = router.pathname === '/writing' || router.pathname.startsWith('/writing/');
 
   const handleMouseEnter = (event) => {
     const colorR = Math.floor(Math.random() * 255);
@@ -54,28 +54,35 @@ export default function NavigationBar() {
               <Link href="/projects"
                 style={router.pathname === '/projects' ? activePage : {}}
                 onMouseEnter={router.pathname === '/projects' ? null : handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                {t("common:projects")}
+                {t("projects")}
               </Link>
             </li>
             <li>
               <Link href="/agenda"
                 style={router.pathname === '/agenda' ? activePage : {}}
                 onMouseEnter={router.pathname === '/agenda' ? null : handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                {t("common:agenda")}
+                {t("agenda")}
               </Link>
             </li>
             <li>
+              <Link href="/writing"
+                style={writingPage ? activePage : {}}
+                onMouseEnter={writingPage ? null : handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                {t("writing")}
+              </Link>
+            </li>
+            {/* <li>
               <Link href="/research" target="_blank"
                 style={router.pathname === '/research' ? activePage : {}}
                 onMouseEnter={router.pathname === '/research' ? null : handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                {t("common:research")}
+                {t("research")}
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/about"
                 style={router.pathname === '/about' ? activePage : {}}
                 onMouseEnter={router.pathname === '/about' ? null : handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                {t("common:about")}
+                {t("about")}
               </Link>
             </li>
           </div>

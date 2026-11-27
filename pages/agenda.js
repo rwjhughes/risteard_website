@@ -896,14 +896,14 @@ const groupConcertsByYear = (concerts) => {
 
 export default function ConcertList() {
   let router = useRouter();
-  let { t } = useTranslation();
+  let { t } = useTranslation('common');
   const groupedConcerts = groupConcertsByYear(concerts);
 
   return (
     <div>
       <Head>
         <title>
-          {t("agenda:title")}
+          {t("agenda")} | Risteárd Ó hAodha
         </title>
         <meta name="description" content="List of upcoming concerts" />
       </Head>

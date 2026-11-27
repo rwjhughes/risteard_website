@@ -624,7 +624,7 @@ const groupProjectsByCategory = (projects) => {
 
 export default function ProjectList() {
   let router = useRouter();
-  let { t } = useTranslation();
+  let { t } = useTranslation('common');
 
   const translateCategory = (category) => {
     switch (category) {
@@ -694,9 +694,9 @@ export default function ProjectList() {
     <div>
       <Head>
         <title>
-          {t("projects:title")}
+          {t("projects")} | Risteárd Ó hAodha
         </title>
-        <meta name="description" content="List of projects" />
+        <meta name="description" content={`${t("projects")} | Risteárd Ó hAodha`} />
       </Head>
       <Navbar />
       <div className={styles.container} style={columnCount}>
@@ -734,7 +734,7 @@ export default function ProjectList() {
                   onClick={() => toggleShowAll(category)}
                   className={styles.seeMore}
                 >
-                  {isExpanded ? '' : t("projects:more")}
+                  {isExpanded ? '' : t("more")}
                 </button>
               )}
             </div>
@@ -764,7 +764,7 @@ export default function ProjectList() {
 
               {selectedProject.link && (
                 <a href={selectedProject.link} target="_blank" rel="noopener noreferrer">
-                  →{t("projects:more")}
+                  →{t("more")}
                 </a>
               )}
 
@@ -778,7 +778,7 @@ export default function ProjectList() {
 
             </div>
             <div className={styles.popupButtons}>
-              <button onClick={() => setSelectedProject(null)}>{t("projects:close")}</button>
+              <button onClick={() => setSelectedProject(null)}>{t("close")}</button>
 
               <div className={styles.locales}>
                 {router.locales.map(locale => (

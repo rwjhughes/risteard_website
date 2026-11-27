@@ -9,7 +9,7 @@ import styles from '../styles/Home.module.css';
 
 export default function Home() {
   let router = useRouter();
-  let { t } = useTranslation();
+  let { t } = useTranslation('common');
 
   const activeStyle = {
     border: 'rgb(181, 181, 181) inset 1px',
@@ -42,35 +42,40 @@ export default function Home() {
           <div className={styles.indexBody}>
             <div className={styles.info}>
               <div className={styles.infoBody}>
-                <li>{t("index:composition")}</li>
-                <li>{t("index:piano")}</li>
-                <li>{t("index:cello")}</li>
-                <li>{t("index:multimedia")}</li>
-                <li>{t("index:research")}</li>
-                <li>{t("index:coding")}</li>
+                <li>{t("composition")}</li>
+                <li>{t("piano")}</li>
+                <li>{t("cello")}</li>
+                <li>{t("multimedia")}</li>
+                <li>{t("research").toLowerCase()}</li>
+                <li>{t("coding")}</li>
               </div>
-              <div className={styles.location}>{t("index:location")}</div>
+              <div className={styles.location}>{t("location")}</div>
             </div>
             <div className={styles.pages}>
 
               <li>
                 <Link href="/projects">
-                  →{t("common:projects")}
+                  →{t("projects")}
                 </Link>
               </li>
               <li>
                 <Link href="/agenda">
-                  →{t("common:agenda")}
+                  →{t("agenda")}
                 </Link>
               </li>
               <li>
-                <Link href="/research" target='_blank'>
-                  →{t("common:research")}
+                <Link href="/writing">
+                  →{t("writing")}
                 </Link>
               </li>
+              {/* <li>
+                <Link href="/research" target='_blank'>
+                  →{t("research")}
+                </Link>
+              </li> */}
               <li>
                 <Link href="/about">
-                  →{t("common:about")}
+                  →{t("about")}
                 </Link>
               </li>
             </div>
@@ -89,7 +94,7 @@ export default function Home() {
               SC
             </Link>
             <Link href="mailto:mise@risteard.ie" className="email" target="_blank">
-              {t("common:email")}
+              {t("email")}
             </Link>
           </div>
         </div>

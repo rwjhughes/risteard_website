@@ -4,6 +4,14 @@ const nextTranslate = require("next-translate");
 const nextConfig = {
   reactStrictMode: true,
   ...nextTranslate(),
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '*.public.blob.vercel-storage.com',
+      },
+    ],
+  },
   async redirects() {
     return [
       {
