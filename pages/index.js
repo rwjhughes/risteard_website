@@ -81,11 +81,11 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.socials}>
-            <Link href="https://twitter.com/risteard_" className="tw" target="_blank">
-              TW
-            </Link>
             <Link href="https://instagram.com/risteard__" className="ig" target="_blank">
               IG
+            </Link>
+            <Link href="https://bsky.app/profile/risteard.ie" className="tw" target="_blank">
+              BS
             </Link>
             <Link href="https://youtube.com/user/rwjh2010" className="yt" target="_blank">
               YT
